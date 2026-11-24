@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tablero Ejecutivo de Producto & Estrategia Comercial | Google Maps Platform</title>
+  <title>Tablero Ejecutivo Google Maps Platform | Vicepresidencia de Producto & Comercial</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
@@ -21,11 +21,11 @@
             gmp: {
               blue: '#1A73E8',
               navy: '#0F4C81',
-              dark: '#1E293B',
-              light: '#E8F0FE',
-              green: '#1E8E3E',
-              yellow: '#F9AB00',
-              red: '#D93025'
+              dark: '#0A2540',
+              emerald: '#059669',
+              amber: '#D97706',
+              rose: '#E11D48',
+              purple: '#7C3AED'
             }
           }
         }
@@ -35,19 +35,21 @@
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
     .card-shadow { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05); }
-    .card-hover:hover { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04); }
+    .card-hover:hover { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04); transform: translateY(-2px); }
     @media print {
       .no-print { display: none !important; }
       body { background: white !important; }
     }
   </style>
-  <script src="./data.js"></script>
+  <script>
+window.dashboardData={"monthsLabel":["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],"monthly2025":[353506,324628,364658,387135,352397,319273,349342,326920,352926,319716,329100,326346],"monthly2026":[292530,286431,312350,316925,324924,321116,335112,327099,318072,303607,228716,null],"activeClients2025":[111,108,138,140,136,136,151,141,141,147,141,141],"activeClients2026":[135,134,137,140,137,136,138,146,142,148,132,null],"kpis":{"total2025_ytd":3779599,"total2026":3366883,"diff_ytd":-412716,"diff_ytd_pct":-10.9,"clients2025":380,"clients2026":420,"arpu2025":9946,"arpu2026":8016,"nrr":92.5,"top10Share":58.3,"newLogosCount":47,"newLogosRev":50643,"churnCount":53,"churnRev":180002,"expansionCount":73,"expansionGain":734309,"contractionCount":77,"contractionLoss":-1018066},"allClients":[{"id":"01771B-1CACD4-15BB1E","name":"MAPS - RAPPI - SERVINFORMACION","cost25":1113445,"cost25_ytd":1041782,"cost26":695253,"diff":-346529,"diffPct":"-33.3%","status":"CONTRACTION"},{"id":"013292-D4228F-48E837","name":"MX - MAPS - OXXO KOF - SERVIMEXICO","cost25":189985,"cost25_ytd":159369,"cost26":357347,"diff":197978,"diffPct":"124.2%","status":"EXPANSION"},{"id":"0189A6-822219-847D25","name":"PE - MAPS - INDIGITAL - SERVIPERU","cost25":197128,"cost25_ytd":171802,"cost26":157309,"diff":-14493,"diffPct":"-8.4%","status":"CONTRACTION"},{"id":"0112C8-0CC468-ACA884","name":"BR - MAPS - VTAL - SERVIBRASIL","cost25":70872,"cost25_ytd":62784,"cost26":142393,"diff":79609,"diffPct":"126.8%","status":"EXPANSION"},{"id":"018B2C-BAF8E3-DCF410","name":"BR - MAPS - RHINO TECHNOLOGIES - SERVIBRASIL","cost25":125400,"cost25_ytd":111470,"cost26":130604,"diff":19134,"diffPct":"17.2%","status":"EXPANSION"},{"id":"016A7E-D33E78-5E0221","name":"MAPS - HABI - SERVINFORMACION","cost25":164120,"cost25_ytd":154216,"cost26":113893,"diff":-40324,"diffPct":"-26.1%","status":"CONTRACTION"},{"id":"0108B5-E45BA7-1C3B92","name":"MAPS - TAXIS LIBRES COTECH ODRD - SERVINFORMACION","cost25":307326,"cost25_ytd":293822,"cost26":112295,"diff":-181527,"diffPct":"-61.8%","status":"CONTRACTION"},{"id":"013176-C696A8-6363ED","name":"MAPS - SODIMAC - SERVINFORMACION","cost25":132779,"cost25_ytd":122377,"cost26":94921,"diff":-27455,"diffPct":"-22.4%","status":"CONTRACTION"},{"id":"011160-5F951C-81D372","name":"BR - CLOUD- SIX-TECH GAMES - SERVIBRASIL","cost25":29333,"cost25_ytd":25484,"cost26":79813,"diff":54329,"diffPct":"213.2%","status":"EXPANSION"},{"id":"0142BF-F73EE2-1CA1D9","name":"PE - MAPS - NG RESTAURANTS - SERVINFORMACION","cost25":82330,"cost25_ytd":76194,"cost26":79355,"diff":3161,"diffPct":"4.1%","status":"EXPANSION"},{"id":"014247-3C413C-D155C6","name":"MAPS - ASISTENCIA BOLIVAR S.A - SERVINFORMACION","cost25":82269,"cost25_ytd":73852,"cost26":72447,"diff":-1405,"diffPct":"-1.9%","status":"CONTRACTION"},{"id":"01307B-7D58F6-692E43","name":"MAPS - GET JUSTO - SERVINFORMACION","cost25":68074,"cost25_ytd":62581,"cost26":64391,"diff":1810,"diffPct":"2.9%","status":"EXPANSION"},{"id":"011656-E7AE81-D6BF9A","name":"MX - CLOUD - 99MINUTOS - SERVIMEXICO","cost25":14955,"cost25_ytd":10090,"cost26":62702,"diff":52613,"diffPct":"521.5%","status":"EXPANSION"},{"id":"01C710-4A9123-883AF5","name":"BR - MAPS - DETEKTOR - SERVIBRASIL","cost25":74656,"cost25_ytd":68881,"cost26":59570,"diff":-9312,"diffPct":"-13.5%","status":"CONTRACTION"},{"id":"0151D7-802303-4F346A","name":"MAPS - LA ESTRELLA - SERVINFORMACION","cost25":61964,"cost25_ytd":54514,"cost26":53544,"diff":-970,"diffPct":"-1.8%","status":"CONTRACTION"},{"id":"01562C-9EDC51-F61944","name":"MAPS - ECOM - SERVINFORMACION","cost25":26409,"cost25_ytd":23757,"cost26":49926,"diff":26169,"diffPct":"110.2%","status":"EXPANSION"},{"id":"015B01-B64828-157F97","name":"CLOUD/MAPS - BANCOLOMBIA - SERVINFORMACION","cost25":88452,"cost25_ytd":81769,"cost26":48281,"diff":-33488,"diffPct":"-41.0%","status":"CONTRACTION"},{"id":"01EC48-A2AE17-629F42","name":"MAPS - FINCA RAIZ DEMO - SERVINFORMACION","cost25":59555,"cost25_ytd":56198,"cost26":47483,"diff":-8714,"diffPct":"-15.5%","status":"CONTRACTION"},{"id":"019CD3-67BBEA-1658DF","name":"CLOUD - COORDINADORA MERCANTIL S.A - SERVINFORMACION","cost25":37721,"cost25_ytd":30772,"cost26":46459,"diff":15686,"diffPct":"51.0%","status":"EXPANSION"},{"id":"01F58E-B92787-1E3BBF","name":"MAPS - DRIVIN COLOMBIA - SERVINFORMACION","cost25":26386,"cost25_ytd":22620,"cost26":38662,"diff":16042,"diffPct":"70.9%","status":"EXPANSION"},{"id":"01EC0D-CAC7CD-57A8E0","name":"BR - MAPS - COLAB - SERVIBRASIL","cost25":2482,"cost25_ytd":0,"cost26":33945,"diff":33945,"diffPct":"+100%","status":"EXPANSION"},{"id":"0146FC-23484D-0F4BD7","name":"PTY - CLOUD - ASSA COMPAÑIA DE SEGUROS - SERVIPANAMA","cost25":1191,"cost25_ytd":0,"cost26":33014,"diff":33014,"diffPct":"+100%","status":"EXPANSION"},{"id":"0131EB-BDF600-3BE3E8","name":"MAPS - ATH - SERVINFORMACION","cost25":37114,"cost25_ytd":34580,"cost26":30018,"diff":-4562,"diffPct":"-13.2%","status":"CONTRACTION"},{"id":"018D3B-241D05-34368B","name":"MAPS - SOLUCIONES BOLIVAR - SERVINFORMACION","cost25":23187,"cost25_ytd":21743,"cost26":28798,"diff":7055,"diffPct":"32.4%","status":"EXPANSION"},{"id":"016CA3-D20660-EA0025","name":"PE - CLOUD - BANCO INTERBANK - SERVINFORMACION","cost25":8812,"cost25_ytd":7989,"cost26":26621,"diff":18631,"diffPct":"233.2%","status":"EXPANSION"},{"id":"013353-4045E7-192E0C","name":"PS - CLOUD - IGAC - SERVINFORMACION","cost25":5991,"cost25_ytd":5174,"cost26":26037,"diff":20863,"diffPct":"403.2%","status":"EXPANSION"},{"id":"001C8E-21B4E9-62A2EF","name":"MAPS - EFECTY - SERVINFORMACION","cost25":23191,"cost25_ytd":21658,"cost26":25572,"diff":3914,"diffPct":"18.1%","status":"EXPANSION"},{"id":"013181-7FAF27-2240D8","name":"MAPS - TCC - SERVINFORMACION","cost25":13313,"cost25_ytd":10940,"cost26":24076,"diff":13136,"diffPct":"120.1%","status":"EXPANSION"},{"id":"01793F-1C717C-E126B8","name":"MX - MAPS - OXXO KOF - SERVINFORMACION","cost25":121494,"cost25_ytd":121417,"cost26":23053,"diff":-98364,"diffPct":"-81.0%","status":"CONTRACTION"},{"id":"011CC0-C972F3-EB9381","name":"PE - MAPS - PNP - SERVINFORMACION","cost25":18593,"cost25_ytd":16583,"cost26":22961,"diff":6378,"diffPct":"38.5%","status":"EXPANSION"},{"id":"019500-5D125D-4750B8","name":"MAPS - LOGYTECH MOBILE - SERVINFORMACION","cost25":36515,"cost25_ytd":34068,"cost26":22654,"diff":-11414,"diffPct":"-33.5%","status":"CONTRACTION"},{"id":"013A52-A3592E-49E545","name":"MAPS - ITELCA - SERVINFORMACION","cost25":4948,"cost25_ytd":2399,"cost26":22547,"diff":20148,"diffPct":"839.7%","status":"EXPANSION"},{"id":"01A28C-268055-D6E355","name":"BR - MAPS - MOBAPPS - SERVIBRASIL","cost25":20550,"cost25_ytd":17785,"cost26":22070,"diff":4285,"diffPct":"24.1%","status":"EXPANSION"},{"id":"01446D-2910A0-6B4813","name":"MAPS - EMI - SERVINFORMACION","cost25":16931,"cost25_ytd":15282,"cost26":22026,"diff":6744,"diffPct":"44.1%","status":"EXPANSION"},{"id":"018C48-0BB972-4897B2","name":"CLOUD - GRUPOZOOM - SERVINFORMACION","cost25":23188,"cost25_ytd":20590,"cost26":21979,"diff":1389,"diffPct":"6.7%","status":"EXPANSION"},{"id":"01A7EB-5B32A5-6962C8","name":"BR - MAPS - AUDSAT - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":18076,"diff":18076,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"00EC1C-443F50-E1C013","name":"CLOUD - FARMATODO - SERVINFORMACION","cost25":14649,"cost25_ytd":13405,"cost26":17365,"diff":3960,"diffPct":"29.5%","status":"EXPANSION"},{"id":"019B11-0B4FF8-4C5398","name":"CO - CLOUD - FARMATODO VENEZUELA - SERVIUSA","cost25":4298,"cost25_ytd":2830,"cost26":17157,"diff":14327,"diffPct":"506.2%","status":"EXPANSION"},{"id":"01FAC2-A01D93-35D59B","name":"PE - MAPS - OLACLICK TECHNOLOGIES - SERVINFORMACION","cost25":37707,"cost25_ytd":36338,"cost26":16775,"diff":-19563,"diffPct":"-53.8%","status":"CONTRACTION"},{"id":"01D810-3F0F4B-2AB8AE","name":"CLOUD - OPERACIONES GENERALES SURA - SERVINFORMACION","cost25":18549,"cost25_ytd":16733,"cost26":16604,"diff":-129,"diffPct":"-0.8%","status":"CONTRACTION"},{"id":"01810D-EE16B4-6FAB0C","name":"MAPS - COPSERVIR - SERVINFORMACION","cost25":13260,"cost25_ytd":12327,"cost26":14350,"diff":2022,"diffPct":"16.4%","status":"EXPANSION"},{"id":"017622-9ABF46-35F807","name":"BR - MAPS - GRUPO LW - SERVIBRASIL","cost25":10091,"cost25_ytd":8923,"cost26":13624,"diff":4701,"diffPct":"52.7%","status":"EXPANSION"},{"id":"01462A-4F4C41-4708B6","name":"MAPS - PROTEKTO - SERVINFORMACION","cost25":19491,"cost25_ytd":18226,"cost26":13331,"diff":-4895,"diffPct":"-26.9%","status":"CONTRACTION"},{"id":"00EC37-889054-10C6F7","name":"CLOUD - BAVARIA - SERVINFORMACION","cost25":11259,"cost25_ytd":10575,"cost26":12822,"diff":2246,"diffPct":"21.2%","status":"EXPANSION"},{"id":"01AAB4-59BCD8-A6BCE6","name":"BR - MAPS - CONTROL INFORMATICA - SERVIBRASIL","cost25":11432,"cost25_ytd":10431,"cost26":12348,"diff":1917,"diffPct":"18.4%","status":"EXPANSION"},{"id":"01782A-9E585D-6F6B69","name":"PE - MAPS - LIMA EXPRESA - SERVINFORMACION","cost25":14303,"cost25_ytd":13027,"cost26":11647,"diff":-1380,"diffPct":"-10.6%","status":"CONTRACTION"},{"id":"012076-A64941-9A87D8","name":"MAPS - HAVAS MEDIA - SERVINFORMACION","cost25":16745,"cost25_ytd":15791,"cost26":11245,"diff":-4546,"diffPct":"-28.8%","status":"CONTRACTION"},{"id":"015F2F-F650A3-2AB45B","name":"CLOUD - HIL HOLDING - SERVINFORMACION","cost25":1824,"cost25_ytd":1490,"cost26":10036,"diff":8546,"diffPct":"573.7%","status":"EXPANSION"},{"id":"010B4D-8461CE-6045BC","name":"BR - MAPS - 4BUS - SERVIBRASIL","cost25":8207,"cost25_ytd":7475,"cost26":9621,"diff":2146,"diffPct":"28.7%","status":"EXPANSION"},{"id":"01E08D-97FCBF-52125A","name":"GTM - CLOUD - GRUPO DISAGRO - SERVIGUATEMALA","cost25":174,"cost25_ytd":65,"cost26":9522,"diff":9456,"diffPct":"14508.0%","status":"EXPANSION"},{"id":"013EF7-5E3DAF-735C95","name":"BR - MAPS - GIESPP - SERVIBRASIL","cost25":4724,"cost25_ytd":3115,"cost26":9363,"diff":6248,"diffPct":"200.6%","status":"EXPANSION"},{"id":"013E67-B8752E-CB6072","name":"MAPS - SATRACK - SERVINFORMACION","cost25":12361,"cost25_ytd":10816,"cost26":9353,"diff":-1463,"diffPct":"-13.5%","status":"CONTRACTION"},{"id":"01D63C-9812B4-90B166","name":"MAPS - COLCOMERCIO - SERVINFORMACION","cost25":10639,"cost25_ytd":9659,"cost26":8882,"diff":-777,"diffPct":"-8.0%","status":"CONTRACTION"},{"id":"018F44-758783-69F6E5","name":"BR - CLOUD - SISGRAPH - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":7965,"diff":7965,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01E956-638C13-8D9966","name":"MAPS - ARANDA SOFTWARE ANDINA - SERVINFORMACION","cost25":9586,"cost25_ytd":8889,"cost26":7959,"diff":-929,"diffPct":"-10.5%","status":"CONTRACTION"},{"id":"012B89-6197CE-4409BA","name":"MX - CLOUD - MAGNITRACKING - SERVIMEXICO","cost25":8353,"cost25_ytd":7581,"cost26":7957,"diff":376,"diffPct":"5.0%","status":"EXPANSION"},{"id":"01AAED-3C028E-715629","name":"CLOUD - SONAR AVL SYSTEM - SERVINFORMACION","cost25":10519,"cost25_ytd":9422,"cost26":7770,"diff":-1652,"diffPct":"-17.5%","status":"CONTRACTION"},{"id":"018AD7-5D2EFF-0B445F","name":"MAPS - QUALA - SERVINFORMACION","cost25":8169,"cost25_ytd":7586,"cost26":7735,"diff":150,"diffPct":"2.0%","status":"EXPANSION"},{"id":"01E0C9-FEB198-26CE2B","name":"MX - MAPS - SPOT2 - SERVIMEXICO","cost25":5271,"cost25_ytd":4801,"cost26":7476,"diff":2675,"diffPct":"55.7%","status":"EXPANSION"},{"id":"01826D-E1E05A-31E632","name":"MAPS - SALUD TOTAL EPS-S - SERVINFORMACION","cost25":6497,"cost25_ytd":6139,"cost26":6885,"diff":746,"diffPct":"12.2%","status":"EXPANSION"},{"id":"00A272-496688-FC98E1","name":"CLOUD - ALTIPAL - SERVINFORMACION","cost25":11418,"cost25_ytd":10725,"cost26":6867,"diff":-3858,"diffPct":"-36.0%","status":"CONTRACTION"},{"id":"012BEB-039A0C-29E872","name":"PE - MAPS - PRO BAGS PERU - SERVINFORMACION","cost25":1094,"cost25_ytd":719,"cost26":6367,"diff":5648,"diffPct":"785.8%","status":"EXPANSION"},{"id":"0151B3-E8EE05-9AAC64","name":"MAPS - SERVIENTREGA - SERVINFORMACION","cost25":11055,"cost25_ytd":10240,"cost26":6255,"diff":-3986,"diffPct":"-38.9%","status":"CONTRACTION"},{"id":"010D98-3D6A81-5B3044","name":"MAPS - SURA CORPORATIVO - SERVINFORMACION","cost25":5867,"cost25_ytd":5603,"cost26":5917,"diff":313,"diffPct":"5.6%","status":"EXPANSION"},{"id":"014550-A2CA39-6AB81E","name":"MAPS - SEGUROS BOLIVAR - SERVINFORMACION","cost25":4246,"cost25_ytd":3474,"cost26":5829,"diff":2355,"diffPct":"67.8%","status":"EXPANSION"},{"id":"01AFDB-90CDA9-3B6299","name":"CLOUD - LECTA - SERVINFORMACION","cost25":6472,"cost25_ytd":5871,"cost26":5765,"diff":-105,"diffPct":"-1.8%","status":"CONTRACTION"},{"id":"01BBCF-5F77DC-6B0D9E","name":"MX - MAPS - FLETES Y TRANSPORTES RUIZ - SERVIMEXICO","cost25":3104,"cost25_ytd":2940,"cost26":5754,"diff":2815,"diffPct":"95.7%","status":"EXPANSION"},{"id":"017656-17D5FE-7B34AF","name":"PS - MAPS - DANE - SERVINFORMACION","cost25":14073,"cost25_ytd":13869,"cost26":5750,"diff":-8119,"diffPct":"-58.5%","status":"CONTRACTION"},{"id":"019DB3-71ADFC-A30F82","name":"EC - CLOUD - KFC - SERVIECUADOR","cost25":0,"cost25_ytd":0,"cost26":5362,"diff":5362,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"0145BB-4715B7-416CC3","name":"MAPS - STEER DAVIS - SERVINFORMACION","cost25":12801,"cost25_ytd":10629,"cost26":5261,"diff":-5367,"diffPct":"-50.5%","status":"CONTRACTION"},{"id":"01A8D7-8ED405-0E1BE0","name":"BR - MAPS - LINEDATA SISTEMAS - SERVIBRASIL","cost25":96,"cost25_ytd":0,"cost26":5135,"diff":5135,"diffPct":"+100%","status":"EXPANSION"},{"id":"012D6E-EDE2E0-9BDC80","name":"CLOUD - INTEIA - SERVINFORMACION","cost25":15846,"cost25_ytd":14763,"cost26":4709,"diff":-10054,"diffPct":"-68.1%","status":"CONTRACTION"},{"id":"01AA20-E06663-F8EC67","name":"CLOUD - TRII - SERVINFORMACION","cost25":4857,"cost25_ytd":4469,"cost26":4690,"diff":221,"diffPct":"4.9%","status":"EXPANSION"},{"id":"0125C3-63DD42-93964E","name":"MAPS - CLARO CORPORATIVO - SERVINFORMACION","cost25":7599,"cost25_ytd":7087,"cost26":4381,"diff":-2706,"diffPct":"-38.2%","status":"CONTRACTION"},{"id":"01047E-5CECBA-A9280C","name":"MAPS - SEGURIDAD ATLAS - SERVINFORMACION","cost25":10999,"cost25_ytd":10370,"cost26":4227,"diff":-6144,"diffPct":"-59.2%","status":"CONTRACTION"},{"id":"01B6A5-124E50-3128CB","name":"MX - MAPS - RED AMBIENTAL - SERVIMEXICO","cost25":412,"cost25_ytd":322,"cost26":4166,"diff":3844,"diffPct":"1194.0%","status":"EXPANSION"},{"id":"013BAD-E000FA-A29881","name":"BR - MAPS - EICON - SERVIBRASIL","cost25":102,"cost25_ytd":102,"cost26":3849,"diff":3746,"diffPct":"3660.7%","status":"EXPANSION"},{"id":"0169DE-673B92-B0E00F","name":"MAPS - METROCUADRADO COM - SERVINFORMACION","cost25":3492,"cost25_ytd":3277,"cost26":3611,"diff":334,"diffPct":"10.2%","status":"EXPANSION"},{"id":"011366-EDE9D5-C5CD4F","name":"SALV - MAPS - COSASE - SERVISALVADOR","cost25":0,"cost25_ytd":0,"cost26":3374,"diff":3374,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01E580-B5B04B-B33522","name":"MAPS - GRUPO WOM - SERVINFORMACION","cost25":7362,"cost25_ytd":7142,"cost26":3131,"diff":-4011,"diffPct":"-56.2%","status":"CONTRACTION"},{"id":"0173EE-B8FC7F-66CD07","name":"BR - MAPS - GWM - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":2938,"diff":2938,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"018C14-9074CD-27B307","name":"MX - MAPS - GRUPO BIMBO MEXICO - SERVINFORMACION","cost25":2646,"cost25_ytd":2634,"cost26":2639,"diff":6,"diffPct":"0.2%","status":"EXPANSION"},{"id":"017A37-27B27F-5B89BE","name":"BR - MAPS - SAMSUNG SDS - SERVIBRASIL","cost25":3531,"cost25_ytd":3261,"cost26":2615,"diff":-645,"diffPct":"-19.8%","status":"CONTRACTION"},{"id":"006622-047424-A1EE86","name":"MAPS - BANCO CAJA SOCIAL - SERVINFORMACION","cost25":2611,"cost25_ytd":2340,"cost26":2609,"diff":269,"diffPct":"11.5%","status":"EXPANSION"},{"id":"0147BB-45F52D-5F4473","name":"MAPS - AZ SMART - SERVINFORMACION","cost25":2931,"cost25_ytd":2714,"cost26":2555,"diff":-159,"diffPct":"-5.9%","status":"CONTRACTION"},{"id":"018B93-991CA2-EE2DDB","name":"CLOUD - YANBAL - SERVINFORMACION","cost25":2928,"cost25_ytd":2717,"cost26":2523,"diff":-195,"diffPct":"-7.2%","status":"CONTRACTION"},{"id":"011DEB-762762-A21356","name":"CLOUD - GLORIA COLOMBIA - SERVINFORMACION","cost25":225,"cost25_ytd":225,"cost26":2445,"diff":2220,"diffPct":"987.5%","status":"EXPANSION"},{"id":"017034-F146BE-483C3C","name":"MAPS - WM MOBILE - SERVINFORMACION","cost25":1568,"cost25_ytd":1409,"cost26":2363,"diff":954,"diffPct":"67.8%","status":"EXPANSION"},{"id":"019A45-90DD9F-57C9A7","name":"MX - CLOUD - MAURICIO LOPEZ LOPEZ - SERVIMEXICO","cost25":928,"cost25_ytd":922,"cost26":2314,"diff":1392,"diffPct":"151.0%","status":"EXPANSION"},{"id":"01DF22-C77D14-297BD1","name":"PS - MAPS - AREA METROPOL VALLE DE ABURRA - SERVINFORMACION","cost25":2812,"cost25_ytd":2711,"cost26":2236,"diff":-475,"diffPct":"-17.5%","status":"CONTRACTION"},{"id":"0126EB-D23907-D99CDD","name":"CLOUD - SERVINFORMACION CONSUMO INTERNO - SERVINFORMACION","cost25":2965,"cost25_ytd":2779,"cost26":2067,"diff":-712,"diffPct":"-25.6%","status":"CONTRACTION"},{"id":"010D0F-FEF0B8-D2AB73","name":"BR - CLOUD - SISTEMAS PLENO - SERVIBRASIL","cost25":3000,"cost25_ytd":2735,"cost26":2046,"diff":-689,"diffPct":"-25.2%","status":"CONTRACTION"},{"id":"0146D8-32FBC9-FA8CA8","name":"MAPS - SODIMAC COLOMBIA - SERVINFORMACION","cost25":2701,"cost25_ytd":2489,"cost26":1950,"diff":-539,"diffPct":"-21.7%","status":"CONTRACTION"},{"id":"018061-026989-F37DF2","name":"CLOUD - LIFTIT CREDITOS - SERVINFORMACION","cost25":4705,"cost25_ytd":4294,"cost26":1909,"diff":-2385,"diffPct":"-55.5%","status":"CONTRACTION"},{"id":"01DDEB-7273CE-A1DF6E","name":"PE - CLOUD - VIDA SOFTWARE - SERVINFORMACION","cost25":317,"cost25_ytd":317,"cost26":1899,"diff":1582,"diffPct":"499.0%","status":"EXPANSION"},{"id":"010427-4D22FC-A6AEBA","name":"CLOUD - TRANSMILENIO S.A - SERVINFORMACION","cost25":6529,"cost25_ytd":5974,"cost26":1804,"diff":-4170,"diffPct":"-69.8%","status":"CONTRACTION"},{"id":"012CA5-9FEE42-FC0371","name":"CLOUD - PUNTO RED DEMO - SERVINFORMACION","cost25":1361,"cost25_ytd":1093,"cost26":1744,"diff":651,"diffPct":"59.6%","status":"EXPANSION"},{"id":"013941-09D32A-1642AA","name":"PE - MAPS - INTER CORPRETAIL - SERVINFORMACION","cost25":1739,"cost25_ytd":1539,"cost26":1719,"diff":180,"diffPct":"11.7%","status":"EXPANSION"},{"id":"014565-7CD7B2-52A32A","name":"BR - CLOUD - SICOMPRA - SERVIBRASIL ","cost25":1535,"cost25_ytd":1333,"cost26":1694,"diff":361,"diffPct":"27.1%","status":"EXPANSION"},{"id":"013904-2142B1-213328","name":"MAPS - ALCALDIA DE BARRANQUILLA - SERVINFORMACION","cost25":868,"cost25_ytd":183,"cost26":1690,"diff":1506,"diffPct":"822.6%","status":"EXPANSION"},{"id":"010A5C-6CD6D3-B063AE","name":"CLOUD - PUNTO RED 1 - SERVINFORMACION","cost25":2565,"cost25_ytd":2389,"cost26":1637,"diff":-752,"diffPct":"-31.5%","status":"CONTRACTION"},{"id":"011BB7-B80155-863D7F","name":"PS - CLOUD - ALCALDIA DE PALMIRA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":1618,"diff":1618,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01AE2E-81772E-E17639","name":"MX - MAPS - AT&T COMUNICACIONES DIGITALES - SERVIMEXICO","cost25":1895,"cost25_ytd":1688,"cost26":1604,"diff":-84,"diffPct":"-5.0%","status":"CONTRACTION"},{"id":"01D2D0-68EB23-8DCCD9","name":"MAPS - AZTECA - SERVINFORMACION","cost25":1999,"cost25_ytd":1829,"cost26":1517,"diff":-313,"diffPct":"-17.1%","status":"CONTRACTION"},{"id":"01CA95-F4F76F-0A7386","name":"CLOUD - SKG TECNOLOGIA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":1432,"diff":1432,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"019372-C50CD5-9E3099","name":"MAPS - GREENLINK - SERVINFORMACION","cost25":1317,"cost25_ytd":1197,"cost26":1398,"diff":201,"diffPct":"16.8%","status":"EXPANSION"},{"id":"01295F-49A7BE-70A301","name":"MAPS - ASEGURAR - SERVINFORMACION","cost25":2228,"cost25_ytd":2081,"cost26":1342,"diff":-738,"diffPct":"-35.5%","status":"CONTRACTION"},{"id":"00D2BA-08587C-AB1DD3","name":"CLOUD - VOTREPASION - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":1273,"diff":1273,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"010EE3-CC5F76-33890C","name":"MAPS - AUDIFARMA - SERVINFORMACION","cost25":510,"cost25_ytd":510,"cost26":1266,"diff":756,"diffPct":"148.4%","status":"EXPANSION"},{"id":"012E48-78D62E-9459D5","name":"PE - CLOUD - CORP E W SAC - SERVINFORMACION","cost25":4596,"cost25_ytd":4304,"cost26":1214,"diff":-3090,"diffPct":"-71.8%","status":"CONTRACTION"},{"id":"01D433-497687-F91221","name":"PE - MAPS - RENIEC - SERVINFORMACION","cost25":4186,"cost25_ytd":3696,"cost26":1206,"diff":-2491,"diffPct":"-67.4%","status":"CONTRACTION"},{"id":"01C1CC-BEE61A-BF0160","name":"CLOUD - CREDIBANCO - SERVINFORMACION","cost25":917,"cost25_ytd":917,"cost26":1188,"diff":271,"diffPct":"29.6%","status":"EXPANSION"},{"id":"013FB9-35648F-72D96C","name":"BR - CLOUD - EXSISTEMAS - SERVIBRASIL","cost25":1497,"cost25_ytd":1364,"cost26":1184,"diff":-180,"diffPct":"-13.2%","status":"CONTRACTION"},{"id":"011F1B-1A7870-A55398","name":"MAPS - COMPENSAR - SERVINFORMACION","cost25":1282,"cost25_ytd":1214,"cost26":1158,"diff":-55,"diffPct":"-4.6%","status":"CONTRACTION"},{"id":"01A782-A3AEAC-808021","name":"PTY - CLOUD - SUPER 99 - SERVINFORMACION","cost25":114,"cost25_ytd":41,"cost26":1122,"diff":1081,"diffPct":"2638.5%","status":"EXPANSION"},{"id":"0170FE-7BEAF4-A73B48","name":"MAPS - ICOLTRANS - SERVINFORMACION","cost25":4828,"cost25_ytd":4669,"cost26":1121,"diff":-3548,"diffPct":"-76.0%","status":"CONTRACTION"},{"id":"01CC5A-2FD7DB-AF6AA2","name":"MAPS - GLOBAL EXPRESS CARGO - SERVINFORMACION","cost25":1625,"cost25_ytd":1625,"cost26":1114,"diff":-511,"diffPct":"-31.4%","status":"CONTRACTION"},{"id":"01D7EF-25EFBA-E20EAE","name":"CLOUD - ASEGURADORA SOLIDARIA DE COLOMBIA - SERVINFORMACION","cost25":3898,"cost25_ytd":3556,"cost26":1079,"diff":-2477,"diffPct":"-69.7%","status":"CONTRACTION"},{"id":"0154FC-7A4339-F91A02","name":"BR - CLOUD - SAT ROTAS INTELIGENTES - SERVIBRASIL","cost25":1534,"cost25_ytd":1509,"cost26":1013,"diff":-496,"diffPct":"-32.9%","status":"CONTRACTION"},{"id":"016F9B-1390DF-A30242","name":"CLOUD - SISTECREDITO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":1008,"diff":1008,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01E59D-B49076-C395BF","name":"CLOUD - TAXIS LIBRES COTECH - SERVINFORMACION","cost25":5934,"cost25_ytd":5263,"cost26":1002,"diff":-4261,"diffPct":"-81.0%","status":"CONTRACTION"},{"id":"018B8C-D33119-2DB08F","name":"PE - CLOUD - GRUPOROMERO - RANSA - SERVINFORMACION","cost25":139,"cost25_ytd":0,"cost26":953,"diff":953,"diffPct":"+100%","status":"EXPANSION"},{"id":"01BBD3-0FE520-340C1C","name":"MAPS - LA GALERIA INMOBILIARIA - SERVINFORMACION","cost25":614,"cost25_ytd":575,"cost26":952,"diff":377,"diffPct":"65.6%","status":"EXPANSION"},{"id":"0128D3-71F248-BB63FB","name":"VE - CLOUD - CLX - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":939,"diff":939,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01649C-8FF607-06FE0D","name":"MAPS - ONE SOLUTION POSITION - SERVINFORMACION","cost25":4386,"cost25_ytd":4259,"cost26":828,"diff":-3431,"diffPct":"-80.6%","status":"CONTRACTION"},{"id":"01CCF0-FA1950-728B28","name":"MAPS - LPG COLOMBIA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":763,"diff":763,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01D348-D2BAC6-5A88A9","name":"CLOUD - BINAR10 - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":701,"diff":701,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01D3C0-14163D-965715","name":"EC - CLOUD - TIENDAS TIA - SERVIECUADOR","cost25":0,"cost25_ytd":0,"cost26":678,"diff":678,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"010DC0-41B489-278EE0","name":"MAPS - AUTECO - SERVINFORMACION","cost25":1304,"cost25_ytd":1288,"cost26":624,"diff":-664,"diffPct":"-51.5%","status":"CONTRACTION"},{"id":"01677F-2B1F86-921A9D","name":"BR - MAPS - SHOPEE - SERVIBRASIL","cost25":5853,"cost25_ytd":5670,"cost26":611,"diff":-5059,"diffPct":"-89.2%","status":"CONTRACTION"},{"id":"013723-817D7D-D10A1A","name":"BR - CLOUD - MEDIPREÇO - SERVIBRASIL","cost25":1108,"cost25_ytd":950,"cost26":585,"diff":-365,"diffPct":"-38.5%","status":"CONTRACTION"},{"id":"01730E-2CB63F-E5FBA8","name":"BR - MAPS - SUPERFRIO - SERVIBRASIL","cost25":720,"cost25_ytd":463,"cost26":562,"diff":99,"diffPct":"21.4%","status":"EXPANSION"},{"id":"01261A-B18E7A-BD420C","name":"GTM - CLOUD - COOPERATIVA GUAYACAN - SERVIGUATEMALA","cost25":3,"cost25_ytd":3,"cost26":510,"diff":507,"diffPct":"14696.8%","status":"EXPANSION"},{"id":"0115A2-304A76-35311D","name":"CLOUD - SERVINFORMACION GEOMARKETING - SERVINFORMACION","cost25":281,"cost25_ytd":281,"cost26":474,"diff":193,"diffPct":"68.9%","status":"EXPANSION"},{"id":"0192BE-63EE95-ACDFA1","name":"BR - CLOUD - AUDSAT - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":457,"diff":457,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"0152A9-B9FBCF-78D1CE","name":"CLOUD - BODYTECH - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":439,"diff":439,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"014041-CA1949-94077F","name":"NIC - CLOUD - GRUPO PELLAS - SERVINFORMACION","cost25":470,"cost25_ytd":409,"cost26":398,"diff":-11,"diffPct":"-2.8%","status":"CONTRACTION"},{"id":"01B160-D91192-72D847","name":"PE - CLOUD - MESA 24/7 - SERVIPERU","cost25":571,"cost25_ytd":499,"cost26":390,"diff":-109,"diffPct":"-21.8%","status":"CONTRACTION"},{"id":"01992B-6F41EB-30D4A3","name":"PE - CLOUD - WILLAX INQBA WONG - SERVIPERU","cost25":0,"cost25_ytd":0,"cost26":389,"diff":389,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"0191E1-DE7952-3E41B4","name":"MAPS - ALSEA COLOMBIA - SERVINFORMACION","cost25":604,"cost25_ytd":433,"cost26":362,"diff":-71,"diffPct":"-16.4%","status":"CONTRACTION"},{"id":"017054-0A9245-D32B65","name":"CLOUD - COLOMBINA - SERVINFORMACION","cost25":2971,"cost25_ytd":1991,"cost26":335,"diff":-1656,"diffPct":"-83.2%","status":"CONTRACTION"},{"id":"010EE6-FB6364-3C5365","name":"CLOUD - ORUSXPERT - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":333,"diff":333,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01D516-717668-79F4EA","name":"MAPS - LAP TECHNOLOGIES - SERVINFORMACION","cost25":531,"cost25_ytd":494,"cost26":325,"diff":-169,"diffPct":"-34.3%","status":"CONTRACTION"},{"id":"009C76-EE7ADD-4025C1","name":"CLOUD - EXTREME TECHNOLOGIES - SERVINFORMACION","cost25":16959,"cost25_ytd":16931,"cost26":315,"diff":-16616,"diffPct":"-98.1%","status":"CONTRACTION"},{"id":"015223-AC09B0-323B54","name":"PE - CLOUD - FOCUS IT - SERVINFORMACION","cost25":173,"cost25_ytd":153,"cost26":304,"diff":151,"diffPct":"99.0%","status":"EXPANSION"},{"id":"013FF0-49392F-A74BE0","name":"CLOUD - SLABCODE - SERVINFORMACION","cost25":2690,"cost25_ytd":2595,"cost26":299,"diff":-2296,"diffPct":"-88.5%","status":"CONTRACTION"},{"id":"0160A4-B81C33-6DA57E","name":"MAPS - EPM - SERVINFORMACION","cost25":153,"cost25_ytd":135,"cost26":293,"diff":159,"diffPct":"117.8%","status":"EXPANSION"},{"id":"01BE54-8DC223-B19657","name":"CLOUD - CHIPER - SERVINFORMACION","cost25":1909,"cost25_ytd":1853,"cost26":291,"diff":-1562,"diffPct":"-84.3%","status":"CONTRACTION"},{"id":"01E0FD-0B554B-A8688F","name":"PE - CLOUD - PLUZ ENERGIA PERU - SERVIPERU","cost25":0,"cost25_ytd":0,"cost26":249,"diff":249,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"016AF5-A6AC07-5C8ADA","name":"CLOUD - FUNDACION COLFUTURO MIGRATION - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":244,"diff":244,"diffPct":"813233.3%","status":"EXPANSION"},{"id":"015927-610B1A-0BDD9C","name":"PE - CLOUD - UNIVERSIDAD AUTONOMA DEL PERU - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":228,"diff":228,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"015B02-959150-F65DA7","name":"PE - CLOUD - TOYOTA DEL PERU - SERVIPERU","cost25":0,"cost25_ytd":0,"cost26":204,"diff":204,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"011FA8-16D6FA-920F46","name":"CLOUD - DISTRIBUIDORA PASTEUR - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":203,"diff":203,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01CBD2-9EE0C6-A19A19","name":"CLOUD - GNP - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":201,"diff":201,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01562B-74E9E2-84DF36","name":"MAPS - LUDYCOM - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":200,"diff":200,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"011C90-4075C1-1A1F36","name":"MX - CLOUD - SACSCLOUD - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":198,"diff":198,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01F72B-9CDF5E-7867A8","name":"BR - CLOUD - OTTEMA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":178,"diff":178,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"018468-37D8A1-7B1A90","name":"PS - CLOUD - CNSC - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":173,"diff":173,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"019ACC-8F7DE4-4647CE","name":"BR - MAPS - SPEEDBIRD - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":162,"diff":162,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01322C-7E7FDA-13F29A","name":"MAPS - LAIKA LMFS - SERVINFORMACION","cost25":89627,"cost25_ytd":81810,"cost26":157,"diff":-81653,"diffPct":"-99.8%","status":"CONTRACTION"},{"id":"015EB6-0C7035-01F25D","name":"MAPS - UBICOM ISERVICES - SERVINFORMACION","cost25":300,"cost25_ytd":283,"cost26":148,"diff":-134,"diffPct":"-47.5%","status":"CONTRACTION"},{"id":"01CBF8-027B44-655856","name":"CLOUD - GLOCATION - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":142,"diff":142,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"015D0B-28F33B-8ADDB7","name":"CLOUD - WCAR - SERVINFORMACION","cost25":251,"cost25_ytd":243,"cost26":141,"diff":-102,"diffPct":"-41.9%","status":"CONTRACTION"},{"id":"017075-7CF9C9-DDAB87","name":"BR - CLOUD - HAGELAB - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":131,"diff":131,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"016231-830B08-9063C3","name":"MAPS - OLIMPICA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":95,"diff":95,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01C24A-277534-0D952D","name":"BR - CLOUD - ENVISION TECNOLOGIA - SERVIBRASIL","cost25":94,"cost25_ytd":94,"cost26":87,"diff":-6,"diffPct":"-6.9%","status":"CONTRACTION"},{"id":"01AEF4-BD661D-73A775","name":"CLOUD - TRANSMILENIO SIDEST - SERVINFORMACION","cost25":7,"cost25_ytd":4,"cost26":82,"diff":78,"diffPct":"1855.3%","status":"EXPANSION"},{"id":"0191C3-2D57FE-275159","name":"MAPS - INNOVASOFT - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":80,"diff":80,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01AAED-AB7535-E27A96","name":"BR - CLOUD - FIX CONSTRUCOES TECNOLOGIA - SERVIBRASIL","cost25":18,"cost25_ytd":11,"cost26":70,"diff":59,"diffPct":"516.8%","status":"EXPANSION"},{"id":"017F91-A7CF62-8FB9B3","name":"CLOUD - SERVINFORMACION DATA - SERVINFORMACION","cost25":95,"cost25_ytd":95,"cost26":69,"diff":-26,"diffPct":"-27.3%","status":"CONTRACTION"},{"id":"01E1A9-FCA7A2-93D312","name":"CLOUD - TRANSMILENIO 2026 - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":67,"diff":67,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"018C52-B2ED45-709265","name":"CLOUD - ARAUJO & SEGOVIA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":65,"diff":65,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"015905-2033F6-E022ED","name":"BR - CLOUD - AGRISAFE TECNOLOGIA - SERVIBRASIL","cost25":3,"cost25_ytd":3,"cost26":61,"diff":58,"diffPct":"1932.1%","status":"EXPANSION"},{"id":"01DB7F-8AF594-632C98","name":"CLOUD - ZOOM CEM - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":59,"diff":59,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"010CE9-8E4301-8640CE","name":"MAPS - SERVINFORMACION GOOGLE MAPS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":58,"diff":58,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"0127D7-212373-725089","name":"CLOUD - SERVINFORMACION SITIDATA - SERVINFORMACION","cost25":11399,"cost25_ytd":11006,"cost26":56,"diff":-10950,"diffPct":"-99.5%","status":"CONTRACTION"},{"id":"0199D2-EA122C-69B084","name":"PS - MAPS - CATASTRO - SERVINFORMACION","cost25":4473,"cost25_ytd":4473,"cost26":54,"diff":-4419,"diffPct":"-98.8%","status":"CONTRACTION"},{"id":"01913D-6E15D0-B50787","name":"BR - CLOUD - CAMELO - SERVIBRASIL","cost25":64,"cost25_ytd":40,"cost26":48,"diff":8,"diffPct":"19.8%","status":"EXPANSION"},{"id":"01F379-3C7896-27E40F","name":"CLOUD - LA HAUS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":44,"diff":44,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01E5CA-2A9323-D3BF04","name":"BR - CLOUD - RIO TERA - SERVIBRASIL","cost25":47,"cost25_ytd":40,"cost26":34,"diff":-5,"diffPct":"-13.5%","status":"CONTRACTION"},{"id":"01CC36-DCC9A2-774BC7","name":"PE - MAPS - SUNAT - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":32,"diff":32,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"018969-83A0EA-D7B1C3","name":"CLOUD - BLACKSIP - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":29,"diff":29,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"016178-F07BDC-1246ED","name":"MAPS - SUITCO GOOGLE - SERVINFORMACION","cost25":43,"cost25_ytd":10,"cost26":28,"diff":18,"diffPct":"178.4%","status":"EXPANSION"},{"id":"018519-7AC467-0CCED7","name":"MAPS - RECURSO CONFIABLE - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":27,"diff":27,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01AEFE-5DCFA2-1DFD5B","name":"CLOUD - ADSMOVIL - SERVINFORMACION","cost25":57,"cost25_ytd":57,"cost26":19,"diff":-38,"diffPct":"-66.0%","status":"CONTRACTION"},{"id":"0171F8-472A6B-629605","name":"PE - MAPS - MINEM - SERVINFORMACION","cost25":57,"cost25_ytd":57,"cost26":17,"diff":-40,"diffPct":"-70.0%","status":"CONTRACTION"},{"id":"01FD96-C5E6C5-66AB5B","name":"PE - CLOUD - GRETEL INTERNATIONAL - SERVIPERU","cost25":0,"cost25_ytd":0,"cost26":15,"diff":15,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01F43E-7AD64F-30D2F2","name":"CLOUD - SERVINFORMACION SOLUCIONES PROPIAS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":14,"diff":14,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01F951-92DFD6-7B4A82","name":"BR - CLOUD - GRUPO IN PRESS - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":13,"diff":13,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01D181-C2EA15-3D425F","name":"PE - CLOUD - LAIVE - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":13,"diff":13,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01EE12-065E13-5F1EF2","name":"BR - CLOUD - CENTRAL DO FRETE - SERVIBRASIL","cost25":645,"cost25_ytd":645,"cost26":12,"diff":-633,"diffPct":"-98.2%","status":"CONTRACTION"},{"id":"01B8F7-454FBF-7FCFF9","name":"CLOUD - SERDAN - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":9,"diff":9,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"017FC0-3FA525-B22827","name":"PE - CLOUD - TCONTUR - SERVINFORMACION","cost25":852,"cost25_ytd":849,"cost26":7,"diff":-842,"diffPct":"-99.2%","status":"CONTRACTION"},{"id":"01790C-6F6201-D92994","name":"CLOUD - BACO FOODS COLOMBIA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":6,"diff":6,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01AC6C-93E566-6E162A","name":"PE - CLOUD - NOTICIAS PERU - SERVIPERU","cost25":0,"cost25_ytd":0,"cost26":4,"diff":4,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"010211-7E056A-F93F72","name":"CLOUD - SOFTWARE EN MOVIMIENTO S.A.S - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":1,"diff":1,"diffPct":"+100%","status":"NEW_LOGO"},{"id":"01E32B-FAB433-E5F6E1","name":"BR - CLOUD - LETS SOFTWARE - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01056C-32C36B-6D2742","name":"BR - CLOUD - SERVINFORMACION DEMO BRASIL - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"011BC9-BD0188-949840","name":"EC - CLOUD - 101GRADOS MARKETING RELACIONAL- SERVIECUADOR","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01346D-1C931F-4A1C49","name":"CLOUD - COLFUTURO - SERVINFORMACION","cost25":8120,"cost25_ytd":8120,"cost26":0,"diff":-8120,"diffPct":"-100.0%","status":"CHURN"},{"id":"0146CE-30616E-678A94","name":"MAPS - NMV SOLUCIONES - SERVINFORMACION","cost25":12,"cost25_ytd":12,"cost26":0,"diff":-12,"diffPct":"-100.0%","status":"CHURN"},{"id":"01518A-690075-10CA5C","name":"MX - CLOUD - MIDAS TECHNOLOGIES - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01D792-063A72-7979A6","name":"MX - MAPS - 99 MINUTOS - SERVINFORMACION","cost25":44762,"cost25_ytd":44762,"cost26":0,"diff":-44762,"diffPct":"-100.0%","status":"CHURN"},{"id":"01C541-6BA92E-2D42D8","name":"PE - CLOUD - PAYMENTS LATAM - SERVIPERU","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"010782-0DCC2E-5E69FA","name":"CLOUD - SERVIPUNTO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01627D-06A954-BC31BF","name":"CLOUD - SOLISTICA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0192FD-8CD4A5-9DD54E","name":"EC - CLOUD - SIOMAPP - SERVIECUADOR","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01225D-5B37F1-CB13B2","name":"MAPS - CEDENAR - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"014679-EFD0B3-245EBF","name":"EC - CLOUD - SIATI - SERVIECUADOR","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0169FD-ADC97B-B0A8E1","name":"PE - MAPS - SIDERPERU - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01D894-0DF52D-F01508","name":"CLOUD - TEC INNOVA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"011821-5A2E5E-3012A3","name":"CLOUD - MARKET TEAM - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01F577-8DB92F-DFDA38","name":"MAPS - NAVISAF S.A.S - SERVINFORMACION","cost25":56,"cost25_ytd":47,"cost26":0,"diff":-47,"diffPct":"-100.0%","status":"CHURN"},{"id":"015FB0-A747CF-0EA964","name":"CLOUD - SERVINFORMACION IA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0135B4-45DAB6-3743A0","name":"BR - CLOUD - INEEDS - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013DA1-720BAD-68B18E","name":"CLOUD - INVAMER - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01AA90-14E0CD-5EC8B6","name":"CLOUD - GLOCATION GEOVISOR - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01D155-5F97EC-E4D227","name":"EC - CLOUD - LA FABRIL - SERVIECUADOR","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01EA0F-50A8F5-D4B36D","name":"MAPS - PORVENIR - SERVINFORMACION","cost25":315,"cost25_ytd":315,"cost26":0,"diff":-315,"diffPct":"-100.0%","status":"CHURN"},{"id":"00A0E7-A2BF7A-AECA2D","name":"MAPS - SATELITRACK - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"017CCF-D14FD1-CD025C","name":"MX - CLOUD - NEORED - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B36A-3D5B7C-4F7D41","name":"CLOUD - BPSMART - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"010F13-037919-EBB4B4","name":"MX - CLOUD - ARRENDAMENTO.MX - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"017AA0-FDC6C6-11C4B7","name":"CLOUD - RAS TAS TAS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01E5DA-B6A87F-620005","name":"MAPS - ACOBARRAS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"010F40-8A7558-C7A2CB","name":"CLOUD - DROPI - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01E9CD-01474D-D19503","name":"BR - CLOUD - MINDSUN - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01017B-9A8236-AA7CA7","name":"BR - CLOUD - NEOGOV SISTEMAS - SERVIBRASIL","cost25":110,"cost25_ytd":110,"cost26":0,"diff":-110,"diffPct":"-100.0%","status":"CHURN"},{"id":"013113-728742-EF256E","name":"MX - CLOUD - GALVAN TORRES & ASOCIADOS - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01F2BA-CC8A8F-9062BC","name":"CLOUD - WOG SAS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01AB9A-D3CDEB-5390DF","name":"PE - CLOUD - AGRICOLA CERRO PRIETO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01EB05-D60B4B-1DF339","name":"EC - CLOUD - MARBELLIZE S.A- SERVIECUADOR","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"018A54-EB1FC9-534D27","name":"BR - CLOUD - GPS TRACKER - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"015469-1797B7-CC4766","name":"BR - CLOUD - M TECH & DATA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01C96D-A4166D-9EDBA0","name":"CLOUD - GLOCATION TRACEAGRO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01DF3B-2D3E58-EECEEC","name":"CLOUD - TALSA BI - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0169B4-25C2C6-3C6107","name":"MAPS - 24 SATELITAL - SERVINFORMACION","cost25":145,"cost25_ytd":145,"cost26":0,"diff":-145,"diffPct":"-100.0%","status":"CHURN"},{"id":"0109D2-4A1A1D-6D73F3","name":"CLOUD - GRUPO SPIRA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"017B7C-817444-111E0C","name":"CLOUD - ASISTENCIA MEDICA INMEDIATA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01BD1C-22DFAD-AA6552","name":"CLOUD - FARMATODO PROYECTO INNOVACION - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013E64-58BCCD-C4FDD3","name":"PS - CLOUD - IDT - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B421-D7AAAB-C5F713","name":"CLOUD - COMPAS LEGISLATIVO- SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B5D8-DF947B-7B1878","name":"PS - CLOUD - MINTIC IA SA05 - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0194FF-ABD41C-B1FD83","name":"MAPS - MARKETING PERSONAL - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"011E3B-4D6308-6AE234","name":"CLOUD - DAVID JUNIO DE LA HOZ MOLINA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"017327-BCA404-E4E950","name":"BR - MAPS - COCA COLA FEMSA - SERVIBRASIL","cost25":3058,"cost25_ytd":3058,"cost26":0,"diff":-3058,"diffPct":"-100.0%","status":"CHURN"},{"id":"01A9F6-822DCC-563BDA","name":"MAPS - YEAPDATA - SERVINFORMACION","cost25":21304,"cost25_ytd":21304,"cost26":0,"diff":-21304,"diffPct":"-100.0%","status":"CHURN"},{"id":"01191B-03E4A4-B16619","name":"CLOUD - UNIVERSIDAD DEL VALLE - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0116E5-C8804D-589F18","name":"MX - CLOUD - AGGMETECH - SERVIMEXICO","cost25":372,"cost25_ytd":372,"cost26":0,"diff":-372,"diffPct":"-100.0%","status":"CHURN"},{"id":"01A1BE-899531-0FCC71","name":"CLOUD - SEGURTRONIC - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"014127-27B222-EAB908","name":"CLOUD - SAPIENCIA DATALAKE - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"012F4E-CC55FF-7C306E","name":"BR - CLOUD - AGENDE TECNOLOGIAS - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01BBC5-7B3405-4007E6","name":"BR - CLOUD - GETZIP - SERVIBRASIL","cost25":2290,"cost25_ytd":2290,"cost26":0,"diff":-2290,"diffPct":"-100.0%","status":"CHURN"},{"id":"01E388-BF2AB2-03EF26","name":"BR - CLOUD - PED SISTEMAS - SERVIBRASIL","cost25":9,"cost25_ytd":9,"cost26":0,"diff":-9,"diffPct":"-100.0%","status":"CHURN"},{"id":"01B087-C7C8B9-F17063","name":"BR - CLOUD - AJU LABS - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013038-DED98E-F91B64","name":"CLOUD - SERVINFORMACION AGRODATAAI - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"015462-3EDB41-8FD9BC","name":"CLOUD - TRANSMILENIO SIDEST 2026 - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01894A-59FEC2-02F6D1","name":"PE - MAPS - FONCODES - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01E6D8-D18EB5-056FFE","name":"BR - MAPS - FUMCB - SERVIBRASIL","cost25":155,"cost25_ytd":155,"cost26":0,"diff":-155,"diffPct":"-100.0%","status":"CHURN"},{"id":"016773-23806A-08AC6F","name":"PTY - CLOUD - JUMPEOPLE - SERVIPANAMA","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"018ED9-BAA088-1CE5F1","name":"SALV - CLOUD - UNIVERSIDAD CENTROAMERICANA - SERVISALVADOR","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0170B0-FE7C3B-C1D472","name":"BR - CLOUD - BELO INVESTMENT RESEARCH - SERVIBRASIL","cost25":12,"cost25_ytd":12,"cost26":0,"diff":-12,"diffPct":"-100.0%","status":"CHURN"},{"id":"01B9AE-6C3D20-55A58D","name":"PS - CLOUD - MINTIC ANE SA04 - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"006C00-6CE54E-4DF639","name":"CLOUD - SERVINFORMACION DEMOS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01112E-F1E61E-7E6B01","name":"USA - CLOUD - VIVENTA - SERVINFORMACION,","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01BFBB-E9C2F9-06699B","name":"BR - CLOUD - MUSICPRO - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013415-117255-03E010","name":"CLOUD - ECONTAINERS DESARROLLO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013984-2AA37A-E8EEFB","name":"BR - CLOUD - ZARV DO BRASIL - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01CBCC-77EBB2-E20EC4","name":"BR - CLOUD - FVA TECNOLOGIA EM SISTEMAS - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01DD1B-18DB1A-DE9D51","name":"MX - CLOUD - BLACK ECCO TI - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01DC16-B3B8B5-8D54C1","name":"PE - CLOUD - MEDIABYTE - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01D4EF-66344F-1F2014","name":"MAPS - MOVIICOL - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"011F51-C8D917-18991E","name":"GTM - CLOUD - CBC - SERVIGUATEMALA","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B607-39214D-A299F6","name":"CLOUD - TRUORA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"018495-CA96FC-2873AE","name":"EC - CLOUD - CODESTUDIOS - SERVIECUADOR","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"018F4A-73F0CB-994BDA","name":"CLOUD - SERVINFORMACION GEOPOLITICS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01FA4A-6BBAEC-59B0BC","name":"BR - CLOUD - INSTITUTO CORDIAL - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016EC3-42E7B6-4AC2ED","name":"PE - MAPS - ATU - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016CD7-668722-B9CDC7","name":"PE - CLOUD - IMP - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"010518-F095AB-62B86B","name":"CLOUD - SISTEMAS EN LINEA S.A. - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016C73-479BC7-13BC6A","name":"MAPS - SEGUROS BOLIVAR DEMO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01DEF1-45AFDD-759347","name":"MAPS - CNID - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01C6F4-1BF928-9A6B14","name":"CLOUD - ECOPETROL - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0160E6-D73F94-F740A2","name":"MX - CLOUD - BINARAPP - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01764E-21643F-DB81A7","name":"BR - CLOUD - MC ADMINISTRADORA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01C320-8739B2-0CF3FB","name":"BR - CLOUD - GEOEFFICACE - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01E99A-07C9CD-545575","name":"BR - CLOUD - GREENDATA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01EE60-AE1C2B-0D560B","name":"BR - MAPS - PREFEITURA DE SANTANA DE PARNAIBA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01E763-0C34C4-180549","name":"CLOUD - MAKITA COLOMBIA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01C3A9-47BB06-5F1AAD","name":"MAPS - SEGURIDAD SUPERIOR - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01DD2F-67263B-DB487A","name":"MAPS - DISTRIBUIDORA PASTEUR - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01DD3F-1F5296-776139","name":"PE - MAPS - MINAM - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01C31F-D0AD1C-B86B63","name":"PS - CLOUD - MINTIC GDD - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0105FA-D069FC-0CAFD1","name":"CLOUD - CAJA DE COMPENSACION COMPENSAR - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016A6C-95E870-9E70A6","name":"MX - CLOUD - FLETES Y TRANSPORTES RUIZ - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01643B-50B880-41AA5A","name":"PTY - MAPS - CONTACTIZA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01396A-7E2338-AE673B","name":"BR - CLOUD - REPLAY SPORTS LANCES ESPORTIVOS - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"012EB1-860E79-A149E9","name":"CLOUD - SERVINFORMACION SERVIMARKETPLACE - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"017CFC-1F9E73-F156D9","name":"CLOUD - PLASS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"018766-B92F35-F78ECB","name":"CLOUD - FYVOO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0134B0-16D8C1-2669D8","name":"CLOUD - LAGOBO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01BF3A-AE14B5-0C2245","name":"BR - CLOUD - VG CONSULT - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B9BB-97579F-EA2CA6","name":"CLOUD - MANUEL PELAEZ - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01D646-E8AE73-351F18","name":"CLOUD - COTRAFA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01F119-65BBAE-8935FF","name":"MAPS - Z COMUNICACIONES - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B0D7-DBF226-ECFA8A","name":"SALV - CLOUD - EMPRESAS ADOC - SERVISALVADOR","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013444-D0AF0D-1EAF0C","name":"CLOUD - CLOUD S - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"010931-680E84-748DAD","name":"MAPS - CLARO REDES INALAMBRICAS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016825-7EC2DE-BA5D9C","name":"CLOUD - SERVINFORMACION WAZE FOR CITIES - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0151CC-7A7BEB-A4D06C","name":"PTY - CLOUD - TMP - SERVIUSA","cost25":49764,"cost25_ytd":49764,"cost26":0,"diff":-49764,"diffPct":"-100.0%","status":"CHURN"},{"id":"01A1A9-8FB5C4-BD84E0","name":"MAPS - FARMALISTO - SERVINFORMACION","cost25":178,"cost25_ytd":178,"cost26":0,"diff":-178,"diffPct":"-100.0%","status":"CHURN"},{"id":"013FCF-D38062-33E608","name":"PE - MAPS - APDAYC - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"019E96-04B955-37DE4C","name":"MAPS - ABG CONSORCIO INMOBILIARIO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"015EA2-DE3F57-6EDE99","name":"BR - CLOUD - CLUBE FII - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016FE1-F97C71-DACD3C","name":"SALV - CLOUD - N1CO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013FA2-CC7B01-47BA3A","name":"BR - CLOUD - CREDITO REAL - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0140C7-59F544-8C6DA3","name":"CLOUD - FARMATODO VENEZUELA - SERVINFORMACION","cost25":4962,"cost25_ytd":4962,"cost26":0,"diff":-4962,"diffPct":"-100.0%","status":"CHURN"},{"id":"01CEF2-0EC3AB-7592E6","name":"MX - CLOUD - LOGIETY TECHNOLOGY - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"011ED8-1FA8F8-734938","name":"CLOUD - GLUKY - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"019F89-051344-002E9E","name":"CLOUD - KONVEX - SERVINFORMACION","cost25":174,"cost25_ytd":174,"cost26":0,"diff":-174,"diffPct":"-100.0%","status":"CHURN"},{"id":"013D35-76C521-11AFC2","name":"CLOUD - CERVALLE - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01D2F0-A6F258-07C2A4","name":"CLOUD - HITBOT - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01E34B-0639B6-D773D8","name":"CLOUD - SENSORIA CITY - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01A882-260930-229E81","name":"MAPS - HICUE SPEAKERS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"019210-2746E8-94BABF","name":"MAPS - START SEGUIMIENTO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01C272-616318-3524F0","name":"PE - CLOUD - AMERICA TELEVISION - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01ADAD-18C298-1DC43C","name":"PE - CLOUD - ATLANTIC CITY - SERVINFORMACION","cost25":801,"cost25_ytd":801,"cost26":0,"diff":-801,"diffPct":"-100.0%","status":"CHURN"},{"id":"01F9B9-BAB823-4D6D71","name":"MAPS - FARMACIA QUANTA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013280-206E36-6227DB","name":"MAPS - NEQUI BANCOLOMBIA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01C83F-34B5F7-12AB3B","name":"CLOUD - SERVINFORMACION ENHANCED SUPPORT - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"011174-21ADE9-AE3A92","name":"BR - CLOUD - TAUGOR - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"00F322-4EFB19-CA19A1","name":"Billing Account for gcp.servinformacion.co","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0115E8-09F115-F8CB46","name":"BR - CLOUD - INSIDE - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"018047-914EA4-206E66","name":"CLOUD - SERVINFORMACION DEMOSTRACIONES SP - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01FADA-142F26-A7993E","name":"EC - CLOUD - TIPTI S.A - SERVIUSA","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01D67B-B64739-7000ED","name":"CLOUD - SERVINFORMACION CONSULTORIA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01EF06-04315E-739A9C","name":"MIA - CLOUD - BUCKSAPP - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01376F-0072AD-76143B","name":"MAPS - RT SOLUTIONS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"00643C-23755A-D28D0A","name":"CLOUD - CLARO ATENCION INMEDIATA - SERVINFORMACION","cost25":366,"cost25_ytd":366,"cost26":0,"diff":-366,"diffPct":"-100.0%","status":"CHURN"},{"id":"01881D-EABE7B-DA6B64","name":"BR - CLOUD - TRANSONIBUS - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"012491-4CA010-0A58D3","name":"BR - CLOUD - DETEKTOR - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"015CD7-DD8144-D7A883","name":"MX - CLOUD - MAGNITRACKING INNOVACION - SERVIMEXICO","cost25":398,"cost25_ytd":398,"cost26":0,"diff":-398,"diffPct":"-100.0%","status":"CHURN"},{"id":"01DCD9-CF7F7A-257304","name":"CLOUD - TECNAS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"018AEA-D1B885-D06E3F","name":"SALV - CLOUD - HUGOAPP - SERVIUSA","cost25":1021,"cost25_ytd":1021,"cost26":0,"diff":-1021,"diffPct":"-100.0%","status":"CHURN"},{"id":"012822-FD8442-6CB4EF","name":"CLOUD - BOPS GROUP - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016EBC-F7A91C-FF9A0C","name":"MX - CLOUD - FORWARD AI - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"011766-740402-F0F5D5","name":"MAPS - TECNOLOGIAS FENIX - SERVINFORMACION","cost25":19,"cost25_ytd":2,"cost26":0,"diff":-2,"diffPct":"-100.0%","status":"CHURN"},{"id":"0193DA-B4D332-D5894A","name":"MX - CLOUD - GALVAN TORRES & ASOCIADOS - SERVINFORMACION","cost25":35,"cost25_ytd":35,"cost26":0,"diff":-35,"diffPct":"-100.0%","status":"CHURN"},{"id":"017FF5-AD04F1-5906E1","name":"PE - MAPS - ESSALUD - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01195F-254385-C81523","name":"MAPS - MERQUEO - SERVINFORMACION","cost25":592,"cost25_ytd":592,"cost26":0,"diff":-592,"diffPct":"-100.0%","status":"CHURN"},{"id":"01CCEA-84C8EE-4760D6","name":"MX - MAPS - SIGMA ALIMENTOS COMERCIAL DEMO - SERVIMEXICO","cost25":5100,"cost25_ytd":5100,"cost26":0,"diff":-5100,"diffPct":"-100.0%","status":"CHURN"},{"id":"01230A-1D2C69-7D646B","name":"CLOUD - CM LOGISTIC - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B42C-7CB95A-EC93FC","name":"CLOUD - GRUPO UMA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01273B-5EDF6D-529684","name":"CLOUD - JERREJERRE - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"012E03-437C3D-C325F1","name":"MAPS - QUAN - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0115A4-2FB3D2-29815F","name":"CLOUD - MI VOLCO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"012781-E6370D-A3097A","name":"MAPS - VISATEL - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"015A99-9EDCC5-12667C","name":"MX - CLOUD - GESTO PAGO - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0147A5-EF8361-DE3CF1","name":"PE - CLOUD - LA POSITIVA SEGUROS - SERVIPERU","cost25":56,"cost25_ytd":56,"cost26":0,"diff":-56,"diffPct":"-100.0%","status":"CHURN"},{"id":"013320-B38748-504C62","name":"PE - CLOUD - SERVINFORMACION DEMO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0179A8-7BE4DB-6A6CC8","name":"BR - CLOUD - BASEHIT - SERVIBRASIL","cost25":16,"cost25_ytd":14,"cost26":0,"diff":-14,"diffPct":"-100.0%","status":"CHURN"},{"id":"010F1F-B957CA-0FA1DC","name":"PE - CLOUD - V360 SAC - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"010564-55D3A5-AF5AE7","name":"CLOUD - MERQUEO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013A82-F1B7AC-F9666D","name":"MX - CLOUD - COMERSEG - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"018077-F4EE44-04C818","name":"BR - CLOUD - PAADOC - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01656C-952342-58D1E2","name":"CLOUD - BANKVISION - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"015BBF-F80A30-9A3B64","name":"CLOUD - VIRTUALSOFT TECH - SERVINFORMACION,","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0147EF-55FF19-B53EAC","name":"PS - CLOUD - SUPERFINANCIERA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01EA8E-2BE6BE-5C3085","name":"CLOUD - CHIPER POC - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0187C6-4E972E-8A3F12","name":"PTY - MAPS - ENSA - SERVIPANAMA","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013A77-61B086-F0656D","name":"CLOUD - KFW SaaS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01970F-668E87-13D332","name":"BR - CLOUD - CIMEX DISTRIBUIDORA DE COSMETICOS - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0109FA-2A63D5-DCE376","name":"CLOUD - ARISTAS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0186E6-BC6617-AC9BCC","name":"MAPS - ARCETEC - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01EFBB-A4FCD1-6C75D8","name":"CLOUD - CLEVEL - SERVINFORMACION","cost25":1,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"CHURN"},{"id":"010924-ECB92C-460AEC","name":"CLOUD - BOLSIYO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01CD7F-A60E88-753532","name":"PS - CLOUD - SUPERFINANCIERA SA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01A9C3-49D5BF-547E8F","name":"MAPS - EMCALI - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"010E40-61FBB5-D4AECF","name":"CLOUD - COUNTRY EXPRESS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01EA87-C569F1-27D474","name":"PS - CLOUD - GOBERNACION VALLE VERTEX - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01D958-19426D-CBA9D9","name":"CLOUD - WM - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"012A96-5BB2B2-E34AD3","name":"CLOUD - AOSSAS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016A79-C99B57-4654D6","name":"PE - CLOUD - MVCS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"019359-6ED74A-C05323","name":"CLOUD/MAPS - BLU LOGISTICS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01EF8C-FC0723-1C4357","name":"BR - MAPS/CLOUD - LETS TECHNOLOGY & INNOVATION - SERVIBRASIL","cost25":1108,"cost25_ytd":1108,"cost26":0,"diff":-1108,"diffPct":"-100.0%","status":"CHURN"},{"id":"01E0A8-62496A-657585","name":"BR - CLOUD - VOX SOLUÇÕES TECNOLOGICAS - SERVIBRASIL","cost25":4354,"cost25_ytd":4354,"cost26":0,"diff":-4354,"diffPct":"-100.0%","status":"CHURN"},{"id":"01927E-107410-79C899","name":"MX - CLOUD - GRUPO DESC - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"018188-D2C7CE-4BB86B","name":"MAPS - PICAP - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01DA8C-047172-6E8566","name":"BR - CLOUD - CONTROLLE - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016F43-79F6B1-7BB6AC","name":"BR - CLOUD - REDBIT - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"014254-68046A-CCF942","name":"BR - CLOUD - SIMPLES - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0120CD-FDEC30-43D9CA","name":"CLOUD - COLMEDICOS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01A897-DB6F1D-DC4014","name":"BR - CLOUD - GRAVAE TECNOLOOGIA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"014860-A00F4D-B3D4ED","name":"CLOUD - TRANSMILENIO ENHANCED SUPPORT - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01F899-296939-B1A216","name":"EC - CLOUD - DOCUMENTS - SERVIECUADOR","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"019043-0AAB49-BE4D2A","name":"CLOUD - COORDINADORA MERCANTIL POC - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"018F00-23047D-76EC75","name":"EC - CLOUD - ACTUARIA CONSULTORES - SERVIECUADOR","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0159D3-D1C5CA-E09BD7","name":"CLOUD - SERVINFORMACION TRAINING - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01E86F-DCC522-042BA9","name":"MAPS - CREBI - SERVINFORMACION","cost25":188,"cost25_ytd":188,"cost26":0,"diff":-188,"diffPct":"-100.0%","status":"CHURN"},{"id":"01A3AD-E27500-1233C2","name":"PE - MAPS - MOMUSO PERU - SERVINFORMACION","cost25":4123,"cost25_ytd":4123,"cost26":0,"diff":-4123,"diffPct":"-100.0%","status":"CHURN"},{"id":"013617-5DC869-CCF13C","name":"CLOUD - GERPRO - SERVINFORMACION","cost25":319,"cost25_ytd":319,"cost26":0,"diff":-319,"diffPct":"-100.0%","status":"CHURN"},{"id":"01AA5A-A1E0F4-16E6F1","name":"BR - CLOUD - CGI - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"017F97-B31A2F-7AF4C1","name":"MAPS - TIPI - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B4EE-59EF9B-12A6C8","name":"CLOUD - CLEZ - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B804-37CBAC-408ECF","name":"BR - CLOUD - BRASIL CARD - SERVIBRASIL","cost25":2285,"cost25_ytd":2285,"cost26":0,"diff":-2285,"diffPct":"-100.0%","status":"CHURN"},{"id":"012890-DA5BEA-61FF92","name":"MX - CLOUD - BANORTE - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B9C9-B5F809-F84EBE","name":"SALV - CLOUD - FUNCAPITAL - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B90B-A9C7DE-07BC81","name":"PS - CLOUD - MINTIC MICROCENTROS - SERVINFORMACION","cost25":365,"cost25_ytd":365,"cost26":0,"diff":-365,"diffPct":"-100.0%","status":"CHURN"},{"id":"011556-24B037-58F344","name":"MAPS - DALMON GROUP S.A.S. - SERVINFORMACION","cost25":9,"cost25_ytd":9,"cost26":0,"diff":-9,"diffPct":"-100.0%","status":"CHURN"},{"id":"01CB64-340438-0C9A0D","name":"MAPS - AOTOUR ODRD - SERVINFORMACION","cost25":1983,"cost25_ytd":1983,"cost26":0,"diff":-1983,"diffPct":"-100.0%","status":"CHURN"},{"id":"01BAF9-04962C-0D9472","name":"CLOUD - FARMATODO ARMIRENE - SERVINFORMACION","cost25":4452,"cost25_ytd":4452,"cost26":0,"diff":-4452,"diffPct":"-100.0%","status":"CHURN"},{"id":"01903B-5DE95B-F847DD","name":"CLOUD - SDS - SERVINFORMACION","cost25":1831,"cost25_ytd":1461,"cost26":0,"diff":-1461,"diffPct":"-100.0%","status":"CHURN"},{"id":"01F1C5-E2F4A6-A2F20D","name":"EC - CLOUD - SIBO AVANCE CIA - SERVIECUADOR","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"017A68-2F3C99-E9EE7B","name":"PE - MAPS - FARMACIAS PERUANAS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0165BC-9B7D89-908D34","name":"BR - MAPS - MUNICIPIO DE GUARULHOS - SERVIBRASIL","cost25":84,"cost25_ytd":84,"cost26":0,"diff":-84,"diffPct":"-100.0%","status":"CHURN"},{"id":"01A96C-3E70DC-E75A22","name":"BR - CLOUD - MERLION IT - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0124EC-5F6005-D6DCDB","name":"BR - CLOUD - CHAMAE NEGOCIOS E TECNOLOGIA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01EC02-40D865-963642","name":"BR - CLOUD - LEAD ENERGY - SERVIBRASIL","cost25":8,"cost25_ytd":8,"cost26":0,"diff":-8,"diffPct":"-100.0%","status":"CHURN"},{"id":"0073E1-4FEF5F-DB9AF7","name":"MAPS - ELEINCO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"014F92-5FAF7F-7A3DD7","name":"BR - CLOUD - DGT - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016EC3-CE7AD4-8AC894","name":"CLOUD - GREEN APPLICATIONS - SERVINFORMACION","cost25":3323,"cost25_ytd":3323,"cost26":0,"diff":-3323,"diffPct":"-100.0%","status":"CHURN"},{"id":"01059B-1EA954-137A4C","name":"BR - CLOUD - WMIX DISTRIBUIDORA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0170E5-C98DA1-E3C71E","name":"CLOUD - BANLINEA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"015601-DA261D-51C535","name":"CLOUD - PEEWAH - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"010DEE-02B293-BB1DCA","name":"CLOUD - XIRIUS TECH - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01D9FC-343B86-D07776","name":"PE - MAPS - CFBD SAC - SERVIPERU","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01D994-ECE47F-75FA08","name":"CLOUD - BLUEARAS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016061-362306-94798F","name":"PE- CLOUD - YURA - SERVIPERU","cost25":14,"cost25_ytd":14,"cost26":0,"diff":-14,"diffPct":"-100.0%","status":"CHURN"},{"id":"00C3F8-654CA8-246462","name":"CLOUD - SAVING THE AMAZON - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01C404-F32F08-3EAE17","name":"BR - CLOUD - AEROSCAN TECNOLOGIA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0134E1-8E84FE-CFFCA7","name":"BR - MAPS - BUSTOP - SERVIBRASIL","cost25":40,"cost25_ytd":40,"cost26":0,"diff":-40,"diffPct":"-100.0%","status":"CHURN"},{"id":"010157-86E4C2-831BF9","name":"EC - CLOUD - DULCAFE - SERVIECUADOR","cost25":2262,"cost25_ytd":2262,"cost26":0,"diff":-2262,"diffPct":"-100.0%","status":"CHURN"},{"id":"01CA76-D1526A-9358A0","name":"BR - CLOUD - VIBRATI TECNOLOGIA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013663-DBFE0A-312036","name":"MAPS - MAKEN - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0116F6-F9ED7F-5496EC","name":"PE - CLOUD - NG RESTAURANTS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"015910-9E12B8-7A5CB8","name":"CLOUD - MEDIAWISE SOLUTIONS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"012906-253B92-B981B3","name":"MAPS - DIGITAL GLOBAL - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013ADA-A6E3A1-EDEEC7","name":"MAPS - SOLUCIONAPPS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01CA3D-96AC07-1DD78F","name":"MAPS - MI AGUILA TIER7 - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"013E23-DADB6C-123700","name":"CLOUD - SIMPLEXITY - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"012F1A-239B00-0AF56A","name":"BR - CLOUD - PRIMES - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01EF3D-992DB3-3AF114","name":"BR - CLOUD - WIKI MULTIMIDIA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0123E8-294C19-3DE2D6","name":"CLOUD - GRADEZCO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"017C1B-D2F963-FDE089","name":"CLOUD - RAPPI ENHANCED SUPPORT - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0194CA-E19E37-AFABE6","name":"PE - CLOUD - COMPARTAMOS FINANCIERA - SERVIPERU","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01EB3B-365A25-A7ADB3","name":"MAPS - ITELCA & CSJ - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"017AE7-04DF2B-B3B765","name":"MX - CLOUD - THE ROBOX - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100.0%","status":"CHURN"},{"id":"01808B-15802E-CBB50E","name":"CLOUD - SAROA SAS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"011B25-5F68BE-22970B","name":"PTY - CLOUD - CREDIYA - SERVIPANAMA","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01DD30-6ECF67-EF9C74","name":"CLOUD - TRANSFIRIENDO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01E946-184D82-13F748","name":"MAPS - TREINTA TECNOLOGIA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01A6E3-3B3479-5F5363","name":"CLOUD - SERVINFORMACION INNOVACION - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01CE43-255422-419973","name":"CLOUD - LA RECETTA Y CIA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"011F4A-7868E5-30E81D","name":"BR - MAPS - M TECH & DATA - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01AADE-07DD1B-450219","name":"CLOUD - DIRECTV - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0193D3-3FA2FC-F82ED0","name":"MAPS - TAXIS YA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"018163-1DED1F-81FAAC","name":"VE - CLOUD - FAUCIGROUP - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"011E8F-352588-FF95B9","name":"CLOUD - SOCIEDAD BIBLICA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01852C-2A9447-FC2901","name":"MX - CLOUD - BASE LABS - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01789C-65844C-44F816","name":"CLOUD - CLARO SEGMENTO MOVIL - SERVINFORMACION","cost25":2,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"CHURN"},{"id":"010B41-10F503-FE7D0A","name":"MX - CLOUD - SIEM - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01E709-4FBA76-9CB015","name":"CLOUD - INFORMACION NEGOCIOS - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"016EB7-9DB54F-9218AA","name":"BR - MAPS - MOBAPPS ODRD - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"010C58-302BF5-CA2E89","name":"CLOUD - ENTERDEV - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01A2E7-37BDD8-66DC8C","name":"BR - CLOUD - SINDATA - SERVIBRASIL,","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"010CAD-649162-956FBB","name":"BR - CLOUD - ECOTRACE - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0149F4-9944FB-13008F","name":"PE - MAPS - UNIFLEX DEL PERU - SERVIPERU","cost25":1119,"cost25_ytd":1119,"cost26":0,"diff":-1119,"diffPct":"-100.0%","status":"CHURN"},{"id":"015309-311C54-DB4251","name":"CLOUD - SERVINFORMACION DATARUTAS - SERVINFORMACION","cost25":7599,"cost25_ytd":7599,"cost26":0,"diff":-7599,"diffPct":"-100.0%","status":"CHURN"},{"id":"016B14-543F3E-3B9056","name":"BR - MAPS - ZARV DO BRASIL ODRD - SERVIBRASIL","cost25":179,"cost25_ytd":179,"cost26":0,"diff":-179,"diffPct":"-100.0%","status":"CHURN"},{"id":"01D909-3A7B71-D0FA96","name":"PE - MAPS - MINISTERIO DE EDUCACIÓN - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01D014-F411BB-BCE753","name":"MAPS - GEOTECH - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01A938-3648F0-3E3290","name":"BR - CLOUD - WAKAR - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01E1F8-59F13C-8644E1","name":"PS - CLOUD - MINTIC GCP CRC - SERVINFORMACION","cost25":-12,"cost25_ytd":-12,"cost26":0,"diff":12,"diffPct":"-100%","status":"EXPANSION"},{"id":"015EC3-9CD9E3-5943CB","name":"PE - CLOUD - FINANCIERA EFECTIVA - SERVIPERU","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B506-314713-C667B1","name":"PS - CLOUD - MINISTERIO DE CULTURA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0164CB-0AE4E7-4B25E1","name":"PE - MAPS - INDRA PERU - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0177CE-5F26D2-50067A","name":"MAPS - COLVATEL - SERVINFORMACION","cost25":11,"cost25_ytd":11,"cost26":0,"diff":-11,"diffPct":"-100.0%","status":"CHURN"},{"id":"01D447-9F75A1-B146A3","name":"MX - CLOUD - MAATAI - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"019252-7F808C-A1BDD6","name":"MAPS - DIRECTV - SERVINFORMACION","cost25":142,"cost25_ytd":142,"cost26":0,"diff":-142,"diffPct":"-100.0%","status":"CHURN"},{"id":"012AAD-54D7A8-33EF46","name":"BR - CLOUD - TECRIAN - SERVIBRASIL","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"010B21-96009F-2FF472","name":"CLOUD - PUNTOS COLOMBIA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"012A7C-0D0252-9A4A11","name":"PAR - CLOUD - FINTECH INVERSIONES - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01B2DB-7CAF37-FB795F","name":"CLOUD - SERVINFORMACION ING DE SOFTWARE - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"0150C0-1C299B-8E0DB6","name":"MX - CLOUD - AIRBAG TECHNOLOGIES - SERVIMEXICO","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01CD1E-CBA374-6C17A4","name":"CLOUD - TRANSPORTEMPO - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"017F09-676B65-3D5E08","name":"CLOUD - ALCALDIA DE ARMENIA - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01CC47-E12673-69373E","name":"MAPS - LABORATORIOS COLCAN - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"},{"id":"01BC8E-640C33-C02AFB","name":"CLOUD - SEGUROS BOLIVAR - SERVINFORMACION","cost25":0,"cost25_ytd":0,"cost26":0,"diff":0,"diffPct":"-100%","status":"FLAT"}],"pipelineWon":[{"name":"Avianca Holdings S.A. (Check-in USA)","id":"Deal CRM: 006Kf00000PixwBIAR","stage":"Stage 3 - En Firma de Contrato (Aprobado Nov-20)","amountEst":"$113,544 USD (Google) / $25,000 USD (Servi)","statusInfo":"Cliente Enterprise ganado comercialmente. Inicio de facturación en consola proyectado para cierre Q4-2026 / Q1-2027."},{"name":"Empresa de Transporte de Pasajeros Metro SA (Metro de Santiago)","id":"Subcuenta: 01C8A7-6E42A6-E18C09","stage":"Stage 4a - Closed Won (Activada en Consola Oct-30)","amountEst":"$9,354 USD (Créditos 6 meses)","statusInfo":"Contrato adjudicado y subcuenta técnica activada el 30 de octubre de 2026. Consumo entra en la facturación cerrada de Noviembre 2026."}],"topSkus":[{"name":"Dynamic Maps","cost25_ytd":759098,"cost26":711029,"growthPct":"-6.3","clients26":107},{"name":"Geocoding","cost25_ytd":603167,"cost26":635036,"growthPct":"5.3","clients26":92},{"name":"Routes: Compute Routes Pro","cost25_ytd":285586,"cost26":423053,"growthPct":"48.1","clients26":12},{"name":"Places API Place Details Pro","cost25_ytd":166782,"cost26":209247,"growthPct":"25.5","clients26":6},{"name":"Places Details","cost25_ytd":360477,"cost26":180058,"growthPct":"-50.0","clients26":42},{"name":"Autocomplete Requests","cost25_ytd":138952,"cost26":160869,"growthPct":"15.8","clients26":21},{"name":"Directions","cost25_ytd":107480,"cost26":160129,"growthPct":"49.0","clients26":17},{"name":"Distance Matrix","cost25_ytd":149260,"cost26":145663,"growthPct":"-2.4","clients26":17},{"name":"Autocomplete - Per Request","cost25_ytd":156051,"cost26":114455,"growthPct":"-26.7","clients26":46},{"name":"Mobility Accelerate count - Global","cost25_ytd":219870,"cost26":112452,"growthPct":"-48.9","clients26":2}]};
+  </script>
 </head>
 <body class="h-full text-slate-800 antialiased selection:bg-blue-100 selection:text-gmp-navy">
 
-  <!-- Top Navigation Bar -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Top Executive Header (Widescreen Full Layout) -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="w-full max-w-[1780px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
       <div class="flex justify-between items-center h-16">
         <div class="flex items-center space-x-3">
           <div class="w-10 h-10 rounded-xl bg-gmp-navy flex items-center justify-center text-white font-bold text-lg shadow-sm">
@@ -57,648 +59,617 @@
           </div>
           <div>
             <div class="flex items-center space-x-2">
-              <span class="text-xs font-semibold uppercase tracking-wider text-gmp-navy bg-blue-50 px-2 py-0.5 rounded-md border border-blue-100">Executive Briefing</span>
-              <span class="text-xs text-slate-400">•</span>
-              <span class="text-xs font-medium text-slate-500">Google Maps Platform</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-gmp-navy bg-blue-50 px-2 py-0.5 rounded-md border border-blue-100">Executive Data Board</span>
+              <span class="text-xs text-slate-300">•</span>
+              <span class="text-xs font-semibold text-slate-500">Google Maps Platform</span>
             </div>
-            <h1 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight">Tablero de Control para Vicepresidencia de Producto & Estrategia Comercial</h1>
+            <h1 class="text-base sm:text-lg font-extrabold text-slate-900 tracking-tight">Tablero de Control para Vicepresidencia de Producto & Comercial</h1>
           </div>
         </div>
 
         <div class="flex items-center space-x-3 no-print">
-          <div class="hidden md:flex items-center space-x-1 text-xs text-slate-500 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
+          <div class="hidden sm:flex items-center space-x-2 text-xs text-slate-600 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>Auditoría YTD (Ene-Nov 2026 vs 2025)</span>
+            <span class="font-semibold">Auditoría 2025 vs 2026 YTD</span>
           </div>
-          <button onclick="window.print()" class="inline-flex items-center px-3.5 py-1.5 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 hover:text-slate-900 transition-all shadow-xs">
+          <button onclick="window.print()" class="inline-flex items-center px-3.5 py-1.5 text-xs font-semibold text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-all shadow-xs">
             <svg class="w-4 h-4 mr-1.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
-            Exportar / Imprimir
+            Imprimir / PDF
           </button>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+  <main class="w-full max-w-[1780px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-5 space-y-5">
 
-    <!-- Hero / Executive Scope Banner -->
-    <div class="bg-gradient-to-r from-slate-900 via-gmp-navy to-[#1A6BA8] rounded-3xl p-6 sm:p-8 text-white shadow-xl relative overflow-hidden">
-      <div class="absolute -right-10 -bottom-10 w-80 h-80 rounded-full bg-white/5 blur-2xl pointer-events-none"></div>
-      <div class="relative z-10 max-w-3xl">
-        <span class="text-xs font-bold tracking-widest uppercase bg-white/15 px-3 py-1 rounded-full text-blue-100 border border-white/20">Google Maps Platform • Cartera Consolidada</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-3 tracking-tight">Diagnóstico Estratégico de Cartera y Expansión Tecnológica</h2>
-        <p class="text-sm sm:text-base text-blue-100/90 mt-2 leading-relaxed">
-          Comparativa multivariable de <strong>$7.47M USD</strong> de facturación auditada de Google Maps Platform (2025 vs 2026 YTD). Mapeo de cohortes, retención neta (NRR), adopción de SKUs de nueva generación y plan de monetización para la toma de decisiones comerciales y de producto.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6 pt-6 border-t border-white/15">
+    <!-- KPI Cockpit Bar (Con Explicación Concreta de Métrica & Orientación) -->
+    <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3.5">
+      
+      <!-- KPI 1 -->
+      <div class="bg-white p-4 rounded-2xl border border-slate-200/90 card-shadow transition-all card-hover flex flex-col justify-between">
         <div>
-          <div class="text-xs text-blue-200">Facturación 2026 YTD</div>
-          <div class="text-xl sm:text-2xl font-bold font-mono text-white mt-0.5">$3,366,883 USD</div>
-          <div class="text-xs text-rose-300 font-medium mt-0.5 flex items-center">
-            <span>▼ -10.9%</span>
-            <span class="text-blue-200 ml-1">vs 2025 YTD</span>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Facturación 2026 YTD</span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-50 text-rose-700 border border-rose-100">▼ -10.9%</span>
           </div>
+          <div class="text-xl sm:text-2xl font-extrabold font-mono text-slate-900 mt-1">$3.37M</div>
+          <div class="text-[11px] font-semibold text-slate-700 mt-0.5">Ingreso Neto Acumulado</div>
         </div>
+        <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10.5px] leading-snug text-slate-500">
+          <strong class="text-slate-700 font-medium">Orientación:</strong> Brecha de -$412k USD vs 2025 ($3.78M). Caída concentrada en optimizaciones de 5 cuentas ancla.
+        </div>
+      </div>
+
+      <!-- KPI 2 -->
+      <div class="bg-white p-4 rounded-2xl border border-slate-200/90 card-shadow transition-all card-hover flex flex-col justify-between">
         <div>
-          <div class="text-xs text-blue-200">Base Activa Facturando</div>
-          <div class="text-xl sm:text-2xl font-bold font-mono text-white mt-0.5">420 Cuentas</div>
-          <div class="text-xs text-emerald-300 font-medium mt-0.5 flex items-center">
-            <span>▲ +10.5%</span>
-            <span class="text-blue-200 ml-1">(+40 cuentas netas)</span>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Base Activa</span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-100">▲ +10.5%</span>
           </div>
+          <div class="text-xl sm:text-2xl font-extrabold font-mono text-emerald-600 mt-1">420 Cuentas</div>
+          <div class="text-[11px] font-semibold text-slate-700 mt-0.5">Cartera Total Facturando</div>
         </div>
+        <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10.5px] leading-snug text-slate-500">
+          <strong class="text-slate-700 font-medium">Orientación:</strong> +40 clientes activos vs 2025 (380). Mayor penetración de mercado, con tickets de menor volumen inicial.
+        </div>
+      </div>
+
+      <!-- KPI 3 -->
+      <div class="bg-white p-4 rounded-2xl border border-slate-200/90 card-shadow transition-all card-hover flex flex-col justify-between">
         <div>
-          <div class="text-xs text-blue-200">Net Revenue Retention (NRR)</div>
-          <div class="text-xl sm:text-2xl font-bold font-mono text-white mt-0.5">92.5%</div>
-          <div class="text-xs text-amber-300 font-medium mt-0.5">Expansión mitiga contracción</div>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Retención Neta (NRR)</span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-100">Contracción</span>
+          </div>
+          <div class="text-xl sm:text-2xl font-extrabold font-mono text-slate-900 mt-1">92.5%</div>
+          <div class="text-[11px] font-semibold text-slate-700 mt-0.5">Net Revenue Retention</div>
         </div>
+        <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10.5px] leading-snug text-slate-500">
+          <strong class="text-slate-700 font-medium">Orientación:</strong> Al estar bajo 100%, la contracción (-$1.02M) supera la expansión (+$734k). Requiere blindaje FinOps.
+        </div>
+      </div>
+
+      <!-- KPI 4 -->
+      <div class="bg-white p-4 rounded-2xl border border-slate-200/90 card-shadow transition-all card-hover flex flex-col justify-between">
         <div>
-          <div class="text-xs text-blue-200">Concentración Pareto (Top 10)</div>
-          <div class="text-xl sm:text-2xl font-bold font-mono text-white mt-0.5">58.3%</div>
-          <div class="text-xs text-blue-200 font-medium mt-0.5">$1.96M USD en 10 cuentas</div>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">ARPU Anualizado</span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-100">▼ -19.4%</span>
+          </div>
+          <div class="text-xl sm:text-2xl font-extrabold font-mono text-slate-900 mt-1">$8,016</div>
+          <div class="text-[11px] font-semibold text-slate-700 mt-0.5">Ingreso Promedio / Cuenta</div>
+        </div>
+        <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10.5px] leading-snug text-slate-500">
+          <strong class="text-slate-700 font-medium">Orientación:</strong> Disminuye vs $9,946 de 2025. El ingreso de 47 New Logos de menor ticket diluye el promedio de facturación.
         </div>
       </div>
-    </div>
 
-    <!-- Criterio Metodológico de Clasificación -->
-    <div class="bg-blue-50/70 border border-blue-200/80 rounded-2xl p-4 sm:p-5 text-xs text-slate-700 space-y-2">
-      <div class="flex items-center space-x-2 font-bold text-gmp-navy">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-        <span class="text-sm">Criterio Formal de Clasificación de Clientes (Cohortes & Estados de Facturación)</span>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-3 pt-1">
-        <div class="bg-white p-3 rounded-xl border border-blue-100">
-          <span class="font-bold text-blue-700 block mb-0.5">1. New Logo (Nuevo)</span>
-          <span>Cuenta con <strong>$0 USD en 2025</strong> y primer consumo positivo registrado en 2026. Identificadas <strong>47 cuentas</strong> ($50,643 USD).</span>
-        </div>
-        <div class="bg-white p-3 rounded-xl border border-blue-100">
-          <span class="font-bold text-emerald-700 block mb-0.5">2. Expansión (Upsell)</span>
-          <span>Cuenta activa en 2025 cuya facturación 2026 YTD superó al período equivalente 2025 YTD. <strong>73 cuentas</strong> (+$734,309 USD).</span>
-        </div>
-        <div class="bg-white p-3 rounded-xl border border-blue-100">
-          <span class="font-bold text-amber-700 block mb-0.5">3. Contracción (Downsell)</span>
-          <span>Cuenta activa en 2025 cuya facturación 2026 YTD se redujo vs 2025 YTD por optimización técnica o escala de volumen. <strong>77 cuentas</strong> (-$1,018,066 USD).</span>
-        </div>
-        <div class="bg-white p-3 rounded-xl border border-blue-100">
-          <span class="font-bold text-rose-700 block mb-0.5">4. Retirado (Churn)</span>
-          <span>Cuenta con consumo en 2025 (> $0 USD) y <strong>$0 USD en 2026</strong> por cancelación o apagado de llaves. <strong>53 cuentas</strong> (-$180,002 USD).</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Módulo 1: Cockpit Financiero Detallado -->
-    <section class="space-y-4">
-      <div class="flex items-center justify-between">
+      <!-- KPI 5 -->
+      <div class="bg-white p-4 rounded-2xl border border-slate-200/90 card-shadow transition-all card-hover flex flex-col justify-between">
         <div>
-          <h3 class="text-lg font-bold text-slate-900 tracking-tight">1. Cockpit Financiero & Comercial C-Level</h3>
-          <p class="text-xs text-slate-500">Métricas consolidadas de facturación, tickets promedio y balance de cartera</p>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Pareto Top 10</span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-purple-50 text-purple-700 border border-purple-100">Riesgo Alto</span>
+          </div>
+          <div class="text-xl sm:text-2xl font-extrabold font-mono text-purple-700 mt-1">58.3%</div>
+          <div class="text-[11px] font-semibold text-slate-700 mt-0.5">$1.96M en 10 Cuentas</div>
         </div>
-        <span class="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Moneda: USD Net Billing (Google Maps Platform)</span>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <!-- Card 1: Revenue Gap -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200/80 card-shadow transition-all card-hover">
-          <div class="flex justify-between items-start">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Brecha Facturación YTD</span>
-            <span class="p-1.5 rounded-lg bg-rose-50 text-rose-600">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path></svg>
-            </span>
-          </div>
-          <div class="mt-2">
-            <div class="text-2xl font-bold font-mono text-slate-900">-$412,716 <span class="text-xs text-slate-400 font-normal">USD</span></div>
-            <p class="text-xs text-slate-500 mt-1">2025 YTD: $3.78M ➔ 2026 YTD: $3.37M</p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500">Variación Relativa</span>
-            <span class="font-bold text-rose-600">-10.9%</span>
-          </div>
-        </div>
-
-        <!-- Card 2: ARPU Dynamics -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200/80 card-shadow transition-all card-hover">
-          <div class="flex justify-between items-start">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">ARPU Anual Promedio</span>
-            <span class="p-1.5 rounded-lg bg-amber-50 text-amber-600">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </span>
-          </div>
-          <div class="mt-2">
-            <div class="text-2xl font-bold font-mono text-slate-900">$8,016 <span class="text-xs text-slate-400 font-normal">USD/cuenta</span></div>
-            <p class="text-xs text-slate-500 mt-1">Descenso frente a $9,946 USD en 2025</p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500">Efecto Dilución</span>
-            <span class="font-bold text-amber-600">-19.4% (Entrada long-tail)</span>
-          </div>
-        </div>
-
-        <!-- Card 3: Expansión de Cuentas -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200/80 card-shadow transition-all card-hover">
-          <div class="flex justify-between items-start">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Ganancia por Expansión (Upsell)</span>
-            <span class="p-1.5 rounded-lg bg-emerald-50 text-emerald-600">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-            </span>
-          </div>
-          <div class="mt-2">
-            <div class="text-2xl font-bold font-mono text-emerald-600">+$734,309 <span class="text-xs text-emerald-500 font-normal">USD</span></div>
-            <p class="text-xs text-slate-500 mt-1">Generado por 73 cuentas en crecimiento</p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500">Cuentas Motor</span>
-            <span class="font-bold text-emerald-700">73 Cuentas clave (+24%)</span>
-          </div>
-        </div>
-
-        <!-- Card 4: Fuga / Churn Anual -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200/80 card-shadow transition-all card-hover">
-          <div class="flex justify-between items-start">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Impacto Churn vs New Logos</span>
-            <span class="p-1.5 rounded-lg bg-blue-50 text-gmp-navy">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
-            </span>
-          </div>
-          <div class="mt-2">
-            <div class="text-2xl font-bold font-mono text-slate-900">-$129,359 <span class="text-xs text-slate-400 font-normal">USD neto</span></div>
-            <p class="text-xs text-slate-500 mt-1">Churn: -$180.0k | New Logos: +$50.6k</p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500">Balance Cuentas</span>
-            <span class="font-bold text-slate-800">+47 New / -53 Churn</span>
-          </div>
+        <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10.5px] leading-snug text-slate-500">
+          <strong class="text-slate-700 font-medium">Orientación:</strong> 10 empresas sostienen casi el 60% del negocio. Urge patrocinio gerencial y contratos plurianuales.
         </div>
       </div>
+
+      <!-- KPI 6 -->
+      <div class="bg-white p-4 rounded-2xl border border-slate-200/90 card-shadow transition-all card-hover flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Routes Pro (YoY)</span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-100">▲ +48.1%</span>
+          </div>
+          <div class="text-xl sm:text-2xl font-extrabold font-mono text-emerald-600 mt-1">$423,053</div>
+          <div class="text-[11px] font-semibold text-slate-700 mt-0.5">SKU Motor de Crecimiento</div>
+        </div>
+        <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10.5px] leading-snug text-slate-500">
+          <strong class="text-slate-700 font-medium">Orientación:</strong> Aumentó de $285k a $423k USD. Confirma la alta adopción corporativa en ruteo y movilidad avanzada.
+        </div>
+      </div>
+
     </section>
 
-    <!-- Módulo 2: Top 10 Insights Comerciales & Estratégicos (100% Google Maps) -->
-    <section class="space-y-4">
-      <div class="flex items-center justify-between">
-        <div>
-          <h3 class="text-lg font-bold text-slate-900 tracking-tight">2. Top 10 Insights Estratégicos & de Producto</h3>
-          <p class="text-xs text-slate-500">Hallazgos cuantitativos en Google Maps Platform para la toma de decisiones comerciales y de producto</p>
+    <!-- Visual Charts Row 1: Facturación Mensual & Dinámica NRR -->
+    <section class="grid grid-cols-1 xl:grid-cols-3 gap-4 sm:gap-5">
+      
+      <!-- Chart 1: Curva de Facturación Mensual YoY (2 Columnas) -->
+      <div class="xl:col-span-2 bg-white p-5 rounded-2xl border border-slate-200/90 card-shadow space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-gmp-navy"></span>
+              <h2 class="text-sm sm:text-base font-bold text-slate-900 tracking-tight">Curva Mensual de Facturación YoY (2025 vs 2026 YTD)</h2>
+            </div>
+            <p class="text-xs text-slate-500 mt-0.5"><strong class="text-slate-700">Qué mide:</strong> Comparativa mes a mes del volumen neto facturado en USD (Enero a Noviembre) entre 2025 y 2026.</p>
+          </div>
+          <div class="flex items-center space-x-3 text-xs shrink-0">
+            <span class="inline-flex items-center text-slate-500 font-medium"><span class="w-3 h-3 rounded-full bg-slate-300 mr-1.5"></span> 2025 ($3.78M YTD)</span>
+            <span class="inline-flex items-center font-bold text-gmp-navy"><span class="w-3 h-3 rounded-full bg-gmp-navy mr-1.5"></span> 2026 YTD ($3.37M)</span>
+          </div>
         </div>
-        <span class="text-xs font-medium text-gmp-navy bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Guía para el Comité Directivo</span>
+
+        <div id="monthlyRevenueChart" class="w-full h-64 sm:h-72"></div>
+
+        <!-- Orientación Ejecutiva Bar -->
+        <div class="bg-slate-50 rounded-xl p-3 border border-slate-100 flex items-start space-x-2.5 text-xs text-slate-600">
+          <div class="mt-0.5 text-gmp-navy shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          </div>
+          <div class="leading-relaxed">
+            <strong class="text-slate-800">Orientación ejecutiva:</strong> Se observa una meseta estable de consumo entre $312k y $335k/mes de marzo a septiembre. La caída en octubre ($303k) y noviembre preliminar ($228k) exige acelerar el encendido de los proyectos cerrados de Q4 (Avianca y Metro de Santiago) para recuperar el ritmo de $350k/mes.
+          </div>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Chart 2: Desglose de Dinámica NRR (Waterfall/Bar) (1 Columna) -->
+      <div class="bg-white p-5 rounded-2xl border border-slate-200/90 card-shadow space-y-3 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <h2 class="text-sm sm:text-base font-bold text-slate-900 tracking-tight">Dinámica de Ingresos Netos (NRR)</h2>
+              </div>
+              <p class="text-xs text-slate-500 mt-0.5"><strong class="text-slate-700">Qué mide:</strong> Flujo neto de capital: Expansión, New Logos, Contracción y Churn.</p>
+            </div>
+            <span class="text-xs font-mono font-bold px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">Net: -$412k</span>
+          </div>
+
+          <div id="nrrWaterfallChart" class="w-full h-64 sm:h-72"></div>
+        </div>
+
+        <!-- Orientación Ejecutiva Bar -->
+        <div class="bg-slate-50 rounded-xl p-3 border border-slate-100 flex items-start space-x-2.5 text-xs text-slate-600">
+          <div class="mt-0.5 text-amber-600 shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          </div>
+          <div class="leading-relaxed">
+            <strong class="text-slate-800">Orientación ejecutiva:</strong> El esfuerzo comercial atrajo +$785k (Expansión $734k + New Logos $51k), pero la contracción severa (-$1.02M) en 77 cuentas superó dicho esfuerzo. La retención y optimización de uso superan a la prospección como prioridad comercial.
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Top 10 Insights Estratégicos (10 Tarjetas de Datos de Alto Impacto Visual) -->
+    <section class="space-y-3">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+        <div class="flex items-center space-x-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-gmp-navy"></span>
+          <h2 class="text-base font-extrabold text-slate-900 tracking-tight">Top 10 Tarjetas de Datos & Insights Ejecutivos</h2>
+        </div>
+        <p class="text-xs text-slate-500 font-medium">Diagnóstico ejecutivo y planes de acción concretos para el Comité Directivo</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3.5">
         
-        <!-- Insight 1 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 card-shadow transition-all card-hover flex flex-col justify-between">
+        <!-- Card 1 -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow card-hover flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2.5 py-0.5 rounded-full border border-rose-200">Insight #1 • Dinámica de Ingresos</span>
-              <span class="text-xs font-mono font-semibold text-slate-400">YTD Analysis</span>
+            <div class="flex justify-between items-center mb-1.5">
+              <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">#1 Brecha YTD</span>
+              <span class="text-xs font-mono font-bold text-rose-600">-10.9%</span>
             </div>
-            <h4 class="text-base font-bold text-slate-900">Contracción Neta del -10.9% en Facturación ($3.37M vs $3.78M)</h4>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              La brecha de <strong>-$412,716 USD</strong> no proviene de un colapso de clientes, sino de <strong>optimizaciones técnicas deliberadas en el Top 5 de cuentas</strong> (reducción de consultas repetitivas, políticas de caching local de geocodificación) y el paso natural a tiers con descuentos automáticos por alto volumen de Google Maps Platform.
-            </p>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-slate-900">-$412,716</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-1">Déficit de Facturación Total</div>
+            <div class="text-[11px] text-slate-500 mt-1.5 leading-snug">
+              <strong class="text-slate-700">Qué dice:</strong> Contracción acumulada frente a 2025 YTD ($3.78M vs $3.37M) originada por recortes de consumo en Top 5 cuentas.
+            </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/70 p-2.5 rounded-xl">
-            <span class="font-semibold text-slate-700">Acción VP:</span>
-            <span class="text-slate-600">Revisar contratos con cláusulas de consumo mínimo y auditorías FinOps preventivas.</span>
+          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] font-bold text-gmp-navy flex items-center">
+            <span>→ Plan: Auditoría FinOps preventiva</span>
           </div>
         </div>
 
-        <!-- Insight 2 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 card-shadow transition-all card-hover flex flex-col justify-between">
+        <!-- Card 2 -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow card-hover flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">Insight #2 • Gestión de Cartera</span>
-              <span class="text-xs font-mono font-semibold text-slate-400">Portfolio Shift</span>
+            <div class="flex justify-between items-center mb-1.5">
+              <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">#2 Cartera</span>
+              <span class="text-xs font-mono font-bold text-emerald-600">+10.5%</span>
             </div>
-            <h4 class="text-base font-bold text-slate-900">La Paradoja de la Base Instalada (+10.5% cuentas activas)</h4>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              La cartera creció de <strong>380 a 420 cuentas (+40 netas)</strong>. Sin embargo, el ARPU cayó de <strong>$9,946 a $8,016 USD/año (-19.4%)</strong>. El equipo comercial está captando clientes de menor tamaño relativo (long-tail) pero sin plan estructurado de maduración técnica y crecimiento de volumen.
-            </p>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-emerald-600">+40 Cuentas</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-1">Expansión de Base de Clientes</div>
+            <div class="text-[11px] text-slate-500 mt-1.5 leading-snug">
+              <strong class="text-slate-700">Qué dice:</strong> La base subió de 380 a 420 cuentas activas. El ARPU bajó de $9,946 a $8,016 USD al ingresar cuentas más pequeñas.
+            </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/70 p-2.5 rounded-xl">
-            <span class="font-semibold text-slate-700">Acción VP:</span>
-            <span class="text-slate-600">Instituir un programa de "Product Onboarding & Expansion" para cuentas &lt;$500 USD/mes.</span>
+          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] font-bold text-gmp-navy flex items-center">
+            <span>→ Plan: Onboarding para cuentas &lt;$500</span>
           </div>
         </div>
 
-        <!-- Insight 3 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 card-shadow transition-all card-hover flex flex-col justify-between">
+        <!-- Card 3 -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow card-hover flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-full border border-purple-200">Insight #3 • Vulnerabilidad Financiera</span>
-              <span class="text-xs font-mono font-semibold text-slate-400">Pareto 58.3%</span>
+            <div class="flex justify-between items-center mb-1.5">
+              <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-50 text-purple-700 border border-purple-200">#3 Pareto</span>
+              <span class="text-xs font-mono font-bold text-purple-700">58.3%</span>
             </div>
-            <h4 class="text-base font-bold text-slate-900">Hiperconcentración en Top 10 Cuentas ($1.96M USD)</h4>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              El <strong>58.3% de la facturación global de Google Maps reposa en solo 10 clientes</strong> (TCC, Chiper, 99minutos, Colcomercio, etc.). Esto sitúa a la compañía bajo un riesgo de concentración elevado: cualquier contingencia técnica o desacople comercial en 1 solo de ellos afecta directamente los objetivos anuales.
-            </p>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-purple-700">$1,963,184</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-1">Concentración en Top 10</div>
+            <div class="text-[11px] text-slate-500 mt-1.5 leading-snug">
+              <strong class="text-slate-700">Qué dice:</strong> 10 clientes generan el 58.3% del ingreso global (Rappi, Oxxo KOF, Vtal, Rhino, Habi, Taxis Libres).
+            </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/70 p-2.5 rounded-xl">
-            <span class="font-semibold text-slate-700">Acción VP:</span>
-            <span class="text-slate-600">Asignar 'Executive Sponsorship' directo desde Vicepresidencia a las 10 cuentas doradas.</span>
+          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] font-bold text-gmp-navy flex items-center">
+            <span>→ Plan: Executive Account Sponsorship</span>
           </div>
         </div>
 
-        <!-- Insight 4 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 card-shadow transition-all card-hover flex flex-col justify-between">
+        <!-- Card 4 -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow card-hover flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2.5 py-0.5 rounded-full border border-rose-200">Insight #4 • Retención Neta (NRR)</span>
-              <span class="text-xs font-mono font-semibold text-slate-400">NRR 92.5%</span>
+            <div class="flex justify-between items-center mb-1.5">
+              <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200">#4 Ratio NRR</span>
+              <span class="text-xs font-mono font-bold text-amber-700">1 : 1.37</span>
             </div>
-            <h4 class="text-base font-bold text-slate-900">La Dinámica de Expansión vs Contracción (-$1.01M vs +$734k)</h4>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              Mientras <strong>73 clientes expandieron su facturación (+ $734k USD)</strong>, otras <strong>77 cuentas sufrieron contracción severa (- $1.01M USD)</strong>. Se pierden <strong>$1.37 USD en contracción por cada $1.00 USD ganado en expansión</strong> de cuentas existentes en Google Maps Platform.
-            </p>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-amber-700">-$1.01M</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-1">Contracción Supera Expansión</div>
+            <div class="text-[11px] text-slate-500 mt-1.5 leading-snug">
+              <strong class="text-slate-700">Qué dice:</strong> Por cada $1.00 USD ganado en expansión ($734k), se perdieron $1.37 USD en contracción (-$1.01M).
+            </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/70 p-2.5 rounded-xl">
-            <span class="font-semibold text-slate-700">Acción VP:</span>
-            <span class="text-slate-600">Crear un sistema de alertas tempranas automáticas ante caídas &gt;15% en el consumo mensual.</span>
+          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] font-bold text-gmp-navy flex items-center">
+            <span>→ Plan: Alertas de caída &gt;15% mensual</span>
           </div>
         </div>
 
-        <!-- Insight 5 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 card-shadow transition-all card-hover flex flex-col justify-between">
+        <!-- Card 5 -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow card-hover flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">Insight #5 • Crecimiento de Producto</span>
-              <span class="text-xs font-mono font-semibold text-slate-400">+48.1% YoY</span>
+            <div class="flex justify-between items-center mb-1.5">
+              <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">#5 Producto Estrella</span>
+              <span class="text-xs font-mono font-bold text-emerald-600">+48.1%</span>
             </div>
-            <h4 class="text-base font-bold text-slate-900">Despegue Exponencial de Routes Pro ($423k USD)</h4>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              El SKU <code>Routes: Compute Routes Pro</code> creció de <strong>$285.5k a $423.0k USD (+48.1%)</strong>. Es el producto de mayor aceleración, impulsado por empresas de logística que demandan ruteo multi-parada con tráfico dinámico y cálculo de dos ruedas/camiones.
-            </p>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-emerald-600">$423,053</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-1">Despegue de Routes Pro</div>
+            <div class="text-[11px] text-slate-500 mt-1.5 leading-snug">
+              <strong class="text-slate-700">Qué dice:</strong> Routes Compute Pro escaló de $285k a $423k USD. Es el producto con mayor tracción en logística y última milla.
+            </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/70 p-2.5 rounded-xl">
-            <span class="font-semibold text-slate-700">Acción VP:</span>
-            <span class="text-slate-600">Convertir a Routes Pro en el centro del pitch comercial para logística, última milla y entregas.</span>
+          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] font-bold text-gmp-navy flex items-center">
+            <span>→ Plan: Cross-selling en flotas y delivery</span>
           </div>
         </div>
 
-        <!-- Insight 6 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 card-shadow transition-all card-hover flex flex-col justify-between">
+        <!-- Card 6 -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow card-hover flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">Insight #6 • Transición Tecnológica</span>
-              <span class="text-xs font-mono font-semibold text-slate-400">Migration Health</span>
+            <div class="flex justify-between items-center mb-1.5">
+              <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200">#6 Migración Places</span>
+              <span class="text-xs font-mono font-bold text-blue-600">+25.5%</span>
             </div>
-            <h4 class="text-base font-bold text-slate-900">Migración Exitosa de Places Legacy a New Places API</h4>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              El SKU legacy <code>Places Details</code> cayó <strong>-50.0% ($360k ➔ $180k USD)</strong>, pero fue absorbido exitosamente por <code>Place Details Pro</code> que creció a <strong>$209.2k USD (+25.5%)</strong>. Se evitó la fuga hacia competidores (OpenStreetMap / Mapbox).
-            </p>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-blue-700">$209,247</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-1">Adopción Place Details Pro</div>
+            <div class="text-[11px] text-slate-500 mt-1.5 leading-snug">
+              <strong class="text-slate-700">Qué dice:</strong> El nuevo API Pro compensa la caída de Places Legacy ($180k) sin fuga de contratos hacia proveedores alternativos.
+            </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/70 p-2.5 rounded-xl">
-            <span class="font-semibold text-slate-700">Acción VP:</span>
-            <span class="text-slate-600">Cerrar el remanente de clientes en Legacy antes del fin de soporte oficial de Google.</span>
+          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] font-bold text-gmp-navy flex items-center">
+            <span>→ Plan: Cierre de migración a cuentas legacy</span>
           </div>
         </div>
 
-        <!-- Insight 7 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 card-shadow transition-all card-hover flex flex-col justify-between">
+        <!-- Card 7 -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow card-hover flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">Insight #7 • Pilares de Estabilidad</span>
-              <span class="text-xs font-mono font-semibold text-slate-400">40% del Revenue</span>
+            <div class="flex justify-between items-center mb-1.5">
+              <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">#7 Base Inelástica</span>
+              <span class="text-xs font-mono font-bold text-slate-700">40.0%</span>
             </div>
-            <h4 class="text-base font-bold text-slate-900">Dynamic Maps y Geocoding: Pilares de Infraestructura Crítica</h4>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              <code>Dynamic Maps</code> (<strong>$711k USD</strong>) y <code>Geocoding</code> (<strong>$635k USD</strong>, +5.3% YoY) sostienen más del 40% del negocio. Su demanda es inelástica porque representan la visualización cartográfica base y la normalización de direcciones de las operaciones de los clientes.
-            </p>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-slate-900">$1,346,065</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-1">Dynamic Maps & Geocoding</div>
+            <div class="text-[11px] text-slate-500 mt-1.5 leading-snug">
+              <strong class="text-slate-700">Qué dice:</strong> Dynamic Maps ($711k) y Geocoding ($635k, +5.3%) constituyen el núcleo de consumo estructural insustituible.
+            </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/70 p-2.5 rounded-xl">
-            <span class="font-semibold text-slate-700">Acción VP:</span>
-            <span class="text-slate-600">Blindar contratos multianuales con estos SKUs como ancla no negociable.</span>
+          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] font-bold text-gmp-navy flex items-center">
+            <span>→ Plan: Acuerdos corporativos plurianuales</span>
           </div>
         </div>
 
-        <!-- Insight 8 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 card-shadow transition-all card-hover flex flex-col justify-between">
+        <!-- Card 8 -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow card-hover flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2.5 py-0.5 rounded-full border border-rose-200">Insight #8 • Desbalance de Fuga</span>
-              <span class="text-xs font-mono font-semibold text-slate-400">Churn -$180k</span>
+            <div class="flex justify-between items-center mb-1.5">
+              <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">#8 Déficit Churn</span>
+              <span class="text-xs font-mono font-bold text-rose-600">-$129k</span>
             </div>
-            <h4 class="text-base font-bold text-slate-900">Déficit en el Ciclo de Vida: Churn ($180k) vs New Logos ($50.6k)</h4>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              Las <strong>53 cuentas en Churn</strong> promediaban $3,396 USD/año en 2025, mientras que las <strong>47 New Logos</strong> apenas promedian $1,077 USD en su primer año de consumo. La captación de clientes actuales no compensa la magnitud financiera de las cuentas perdidas.
-            </p>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-rose-600">-$180,002</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-1">Churn ($180k) vs New ($50.6k)</div>
+            <div class="text-[11px] text-slate-500 mt-1.5 leading-snug">
+              <strong class="text-slate-700">Qué dice:</strong> 53 cuentas perdidas facturaban $3.4k USD promedio. Los 47 New Logos promedian $1.0k USD: déficit neto de entrada.
+            </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/70 p-2.5 rounded-xl">
-            <span class="font-semibold text-slate-700">Acción VP:</span>
-            <span class="text-slate-600">Reestructurar comisiones de ventas: bonificar por expansión y retención de volumen, no solo por nuevo logo.</span>
+          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] font-bold text-gmp-navy flex items-center">
+            <span>→ Plan: Win-back a cuentas de &gt;$3k retiradas</span>
           </div>
         </div>
 
-        <!-- Insight 9 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 card-shadow transition-all card-hover flex flex-col justify-between">
+        <!-- Card 9 -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow card-hover flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-gmp-navy bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">Insight #9 • Expansión Tecnológica</span>
-              <span class="text-xs font-mono font-semibold text-slate-400">Adopción GMP</span>
+            <div class="flex justify-between items-center mb-1.5">
+              <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">#9 Expansión GMP</span>
+              <span class="text-xs font-mono font-bold text-emerald-600">Alta Oportunidad</span>
             </div>
-            <h4 class="text-base font-bold text-slate-900">Adopción de Soluciones Avanzadas (Address Validation & Fleet Engine)</h4>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              Cuentas corporativas de alto tráfico logístico y retail (como TCC y Colcomercio) presentan una oportunidad inmediata para incorporar <strong>Address Validation API</strong> (reducción de entregas fallidas) y <strong>Fleet Engine / Last Mile Fleet Solution</strong> (visibilidad en tiempo real de flotas y conductores).
-            </p>
+            <div class="text-lg sm:text-xl font-extrabold text-slate-900 leading-tight">Address & Fleet</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-1">Adopción de APIs Avanzadas</div>
+            <div class="text-[11px] text-slate-500 mt-1.5 leading-snug">
+              <strong class="text-slate-700">Qué dice:</strong> Address Validation (valida entregas) y Fleet Engine (seguimiento en vivo) tienen baja penetración (&lt;5% de base).
+            </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/70 p-2.5 rounded-xl">
-            <span class="font-semibold text-slate-700">Acción VP:</span>
-            <span class="text-slate-600">Diseñar workshops técnicos especializados en Address Validation y Mobility Solutions para cuentas Enterprise.</span>
+          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] font-bold text-gmp-navy flex items-center">
+            <span>→ Plan: Workshops técnicos en cuentas top</span>
           </div>
         </div>
 
-        <!-- Insight 10 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 card-shadow transition-all card-hover flex flex-col justify-between">
+        <!-- Card 10 -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow card-hover flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-200">Insight #10 • FinOps como Producto</span>
-              <span class="text-xs font-mono font-semibold text-slate-400">Fidelización</span>
+            <div class="flex justify-between items-center mb-1.5">
+              <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-50 text-purple-700 border border-purple-200">#10 Pipeline Ganado</span>
+              <span class="text-xs font-mono font-bold text-purple-700">Q4-2026</span>
             </div>
-            <h4 class="text-base font-bold text-slate-900">Gobernanza FinOps Proactiva para Prevenir Optimización Brutal</h4>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              Casos como el pico de Directions en TCC ($5.9k USD en backend) o caídas en Satrack demuestran que los clientes optimizan sin aviso cuando se asustan por costos imprevistos. Ofrecer consultoría FinOps continua los posiciona como aliados y previene cancelaciones sorpresivas.
-            </p>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-purple-700">$122,898</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-1">Metro de Santiago & Avianca</div>
+            <div class="text-[11px] text-slate-500 mt-1.5 leading-snug">
+              <strong class="text-slate-700">Qué dice:</strong> Metro ($9.3k prepago activado) y Avianca ($113.5k en firma) entran a producción e inyectarán facturación en Q4/Q1.
+            </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/70 p-2.5 rounded-xl">
-            <span class="font-semibold text-slate-700">Acción VP:</span>
-            <span class="text-slate-600">Empaquetar la 'Auditoría Trimestral de Gobernanza Maps' en el catálogo de servicios de valor.</span>
+          <div class="mt-3 pt-2 border-t border-slate-100 text-[10px] font-bold text-gmp-navy flex items-center">
+            <span>→ Plan: Acompañamiento a primer corte</span>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- Módulo 3: Curvas de Crecimiento & Estacionalidad (2025 vs 2026) -->
-    <section class="bg-white p-6 rounded-3xl border border-slate-200/90 card-shadow space-y-4">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <div>
-          <h3 class="text-lg font-bold text-slate-900 tracking-tight">3. Dinámica Mensual de Facturación & Brecha YoY</h3>
-          <p class="text-xs text-slate-500">Comparación mes a mes de facturación consolidada en USD (2025 vs 2026 YTD)</p>
+    <!-- Visual Charts Row 2: Top SKUs & Participación del Negocio -->
+    <section class="grid grid-cols-1 xl:grid-cols-3 gap-4 sm:gap-5">
+      
+      <!-- Chart 3: Top SKUs Comparativa 2025 vs 2026 (2 Columnas) -->
+      <div class="xl:col-span-2 bg-white p-5 rounded-2xl border border-slate-200/90 card-shadow space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-gmp-navy"></span>
+              <h2 class="text-sm sm:text-base font-bold text-slate-900 tracking-tight">Top SKUs de Google Maps Platform (2025 vs 2026 YTD)</h2>
+            </div>
+            <p class="text-xs text-slate-500 mt-0.5"><strong class="text-slate-700">Qué mide:</strong> Facturación acumulada por servicio en miles de USD para los 6 SKUs líderes del catálogo.</p>
+          </div>
+          <div class="flex items-center space-x-3 text-xs shrink-0">
+            <span class="inline-flex items-center text-slate-500 font-medium"><span class="w-3 h-3 rounded-full bg-slate-300 mr-1.5"></span> 2025 YTD</span>
+            <span class="inline-flex items-center font-bold text-gmp-navy"><span class="w-3 h-3 rounded-full bg-gmp-navy mr-1.5"></span> 2026 YTD</span>
+            <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100">Routes Pro +48.1%</span>
+          </div>
         </div>
-        <div class="flex items-center space-x-3 text-xs">
-          <span class="inline-flex items-center text-slate-600"><span class="w-3 h-3 rounded-full bg-slate-300 mr-1.5"></span> 2025</span>
-          <span class="inline-flex items-center font-bold text-gmp-navy"><span class="w-3 h-3 rounded-full bg-gmp-navy mr-1.5"></span> 2026 YTD</span>
+
+        <div id="skuHorizontalChart" class="w-full h-72 sm:h-80"></div>
+
+        <!-- Orientación Ejecutiva Bar -->
+        <div class="bg-slate-50 rounded-xl p-3 border border-slate-100 flex items-start space-x-2.5 text-xs text-slate-600">
+          <div class="mt-0.5 text-gmp-navy shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          </div>
+          <div class="leading-relaxed">
+            <strong class="text-slate-800">Orientación ejecutiva:</strong> Se evidencia la migración exitosa desde tecnologías legacy hacia APIs avanzadas. Places Details Pro creció +25.5% ($209k) mitigando el declive de Places Legacy ($180k, -50%), mientras Routes Compute Pro creció un impresionante +48.1% ($423k), consolidándose como la mayor palanca de crecimiento tecnológico.
+          </div>
         </div>
       </div>
 
-      <div id="monthlyChart" class="w-full h-80"></div>
+      <!-- Chart 4: Cuota de Facturación por Familia de SKU (Donut) (1 Columna) -->
+      <div class="bg-white p-5 rounded-2xl border border-slate-200/90 card-shadow space-y-3 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                <h2 class="text-sm sm:text-base font-bold text-slate-900 tracking-tight">Distribución de Ingresos por SKU</h2>
+              </div>
+              <p class="text-xs text-slate-500 mt-0.5"><strong class="text-slate-700">Qué mide:</strong> Cuota porcentual de cada familia de APIs sobre el total 2026 ($3.37M).</p>
+            </div>
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded">100% GMP</span>
+          </div>
+
+          <div id="skuShareDonutChart" class="w-full h-72 sm:h-80 flex items-center justify-center"></div>
+        </div>
+
+        <!-- Orientación Ejecutiva Bar -->
+        <div class="bg-slate-50 rounded-xl p-3 border border-slate-100 flex items-start space-x-2.5 text-xs text-slate-600">
+          <div class="mt-0.5 text-emerald-600 shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          </div>
+          <div class="leading-relaxed">
+            <strong class="text-slate-800">Orientación ejecutiva:</strong> Dynamic Maps (21.1%) y Geocoding (18.9%) representan el 40% del ingreso total y son altamente estables. Routes Pro ya absorbe el 12.6% del portafolio total y es el motor con mayor potencial de upsell en cuentas corporativas.
+          </div>
+        </div>
+      </div>
+
     </section>
 
-    <!-- Módulo 4: Cohortes de Clientes & Matriz de Retención -->
-    <section class="bg-white p-6 rounded-3xl border border-slate-200/90 card-shadow space-y-5">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+    <!-- Módulo 4: Explorador de Cohortes y Clientes (Tabla Interactiva con Filtros Instantáneos) -->
+    <section class="bg-white p-5 rounded-2xl border border-slate-200/90 card-shadow space-y-4">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-100 pb-4">
         <div>
-          <h3 class="text-lg font-bold text-slate-900 tracking-tight">4. Matriz de Cohortes & Comportamiento de Clientes</h3>
-          <p class="text-xs text-slate-500">Exploración interactiva de la base completa de clientes auditada (420 cuentas 2026 + 53 cuentas Churn 2025)</p>
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-gmp-navy"></span>
+            <h2 class="text-base font-extrabold text-slate-900 tracking-tight">Explorador de Cartera & Cohortes de Clientes</h2>
+          </div>
+          <p class="text-xs text-slate-500 mt-0.5">
+            <strong class="text-slate-700">Qué muestra:</strong> Base completa de 488 cuentas (420 activas en 2026 + 53 retiradas en 2025 + 2 ganadas en CRM). 
+            <span class="text-slate-400">|</span> <strong class="text-slate-700">Orientación:</strong> Permite auditar en detalle qué clientes crecen, cuáles se contraen y qué cuentas requieren retención inmediata.
+          </p>
         </div>
         <div class="flex items-center space-x-2">
-          <input type="text" id="clientSearch" placeholder="Buscar cliente por nombre o ID de cuenta..." class="px-3.5 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gmp-navy/30 w-72">
+          <input type="text" id="clientSearch" placeholder="Buscar por cliente o ID de cuenta..." class="px-3.5 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gmp-navy/30 w-full md:w-80">
         </div>
       </div>
 
       <!-- Filters Tabs -->
-      <div class="flex flex-wrap gap-2 border-b border-slate-100 pb-3" id="cohortFilterContainer">
-        <button onclick="filterCohort('TOP30')" id="btn-TOP30" class="cohort-btn active px-3 py-1.5 rounded-lg text-xs font-semibold bg-gmp-navy text-white shadow-xs">Top 30 Facturación</button>
-        <button onclick="filterCohort('NEW_LOGO')" id="btn-NEW_LOGO" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200">New Logos (47)</button>
-        <button onclick="filterCohort('EXPANSION')" id="btn-EXPANSION" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200">En Expansión (73)</button>
-        <button onclick="filterCohort('CONTRACTION')" id="btn-CONTRACTION" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200">En Contracción (77)</button>
-        <button onclick="filterCohort('CHURN')" id="btn-CHURN" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200">Cuentas Retiradas / Churn (53)</button>
-        <button onclick="filterCohort('PIPELINE')" id="btn-PIPELINE" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-purple-50 text-purple-700 hover:bg-purple-100 border border-purple-200">Pipeline Ganado / En Onboarding (2)</button>
-        <button onclick="filterCohort('ALL')" id="btn-ALL" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200">Ver Todos (488)</button>
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3" id="cohortFilterContainer">
+        <div class="flex flex-wrap gap-1.5 sm:gap-2">
+          <button onclick="filterCohort('TOP30')" id="btn-TOP30" class="cohort-btn active px-3 py-1.5 rounded-lg text-xs font-semibold bg-gmp-navy text-white shadow-xs">Top 30 Facturación</button>
+          <button onclick="filterCohort('NEW_LOGO')" id="btn-NEW_LOGO" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200">New Logos (47)</button>
+          <button onclick="filterCohort('EXPANSION')" id="btn-EXPANSION" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200">En Expansión (73)</button>
+          <button onclick="filterCohort('CONTRACTION')" id="btn-CONTRACTION" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200">En Contracción (77)</button>
+          <button onclick="filterCohort('CHURN')" id="btn-CHURN" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200">Retirados / Churn (53)</button>
+          <button onclick="filterCohort('PIPELINE')" id="btn-PIPELINE" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-purple-50 text-purple-700 hover:bg-purple-100 border border-purple-200">Pipeline Ganado (2)</button>
+          <button onclick="filterCohort('ALL')" id="btn-ALL" class="cohort-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200">Ver Todos (488)</button>
+        </div>
+
+        <div class="text-xs font-mono font-bold text-slate-600 bg-slate-50 px-3 py-1 rounded-md border border-slate-200" id="cohortCountBadge">
+          30 registros
+        </div>
       </div>
 
-      <!-- Subheader info banner -->
-      <div id="cohortInfoBanner" class="text-xs bg-slate-50 text-slate-600 p-3 rounded-xl border border-slate-200/80 flex items-center justify-between">
-        <span id="cohortDescription">Mostrando las 30 cuentas de mayor volumen de facturación en 2026.</span>
-        <span id="cohortCountBadge" class="font-bold text-slate-900 font-mono">30 registros</span>
+      <!-- Cohort Description Note -->
+      <div id="cohortDescription" class="text-xs text-slate-600 font-medium bg-slate-50 p-2.5 rounded-lg border border-slate-200/60">
+        Mostrando las 30 cuentas de mayor volumen de facturación en 2026.
       </div>
 
-      <!-- Interactive Table -->
-      <div class="overflow-x-auto max-h-[500px] overflow-y-auto rounded-xl border border-slate-100">
-        <table class="min-w-full divide-y divide-slate-200 text-left text-xs">
-          <thead class="sticky top-0 bg-slate-100/95 backdrop-blur-xs z-10">
-            <tr class="text-slate-600 font-semibold uppercase tracking-wider">
-              <th class="py-3 px-4">Billing Account / Cliente</th>
-              <th class="py-3 px-4 text-right">Fact. 2025 YTD (USD)</th>
-              <th class="py-3 px-4 text-right">Fact. 2026 YTD (USD)</th>
-              <th class="py-3 px-4 text-right">Diferencia ($)</th>
-              <th class="py-3 px-4 text-right">Variación (%)</th>
-              <th class="py-3 px-4 text-center">Estado Cohorte</th>
+      <!-- Table Container -->
+      <div class="overflow-x-auto rounded-xl border border-slate-200">
+        <table class="min-w-full text-xs text-left">
+          <thead class="bg-slate-100 text-slate-700 font-bold uppercase tracking-wider text-[10px] border-b border-slate-200">
+            <tr>
+              <th class="py-2.5 px-4">Billing Account / Cliente</th>
+              <th class="py-2.5 px-4 text-right">Fact. 2025 YTD (USD)</th>
+              <th class="py-2.5 px-4 text-right">Fact. 2026 YTD (USD)</th>
+              <th class="py-2.5 px-4 text-right">Diferencia</th>
+              <th class="py-2.5 px-4 text-right">Variación</th>
+              <th class="py-2.5 px-4 text-center">Estado Cohorte</th>
             </tr>
           </thead>
-          <tbody id="clientTableBody" class="divide-y divide-slate-100 text-slate-700 bg-white">
-            <!-- Rendered by JS -->
+          <tbody id="clientTableBody" class="divide-y divide-slate-100 font-normal">
+            <!-- Dynamic Injection -->
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- Módulo 5: Adopción y Migración de SKUs -->
-    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      
-      <!-- Chart SKUs -->
-      <div class="bg-white p-6 rounded-3xl border border-slate-200/90 card-shadow space-y-4">
-        <div class="flex items-center justify-between">
-          <div>
-            <h3 class="text-base font-bold text-slate-900 tracking-tight">5. Top SKUs: Facturación 2025 vs 2026 (YTD)</h3>
-            <p class="text-xs text-slate-500">Distribución de ingresos por producto core de Google Maps</p>
-          </div>
-          <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Routes Pro +48.1%</span>
-        </div>
-        <div id="skuChart" class="w-full h-80"></div>
-      </div>
-
-      <!-- SKU Migration Matrix Table -->
-      <div class="bg-white p-6 rounded-3xl border border-slate-200/90 card-shadow space-y-4">
-        <div>
-          <h3 class="text-base font-bold text-slate-900 tracking-tight">Evolución Tecnológica de Productos Google</h3>
-          <p class="text-xs text-slate-500">Impacto de la transición a APIs de nueva generación</p>
-        </div>
-
-        <div class="space-y-3">
-          <!-- Dynamic Maps -->
-          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70">
-            <div class="flex justify-between items-center text-xs">
-              <span class="font-bold text-slate-800">Dynamic Maps (JavaScript API)</span>
-              <span class="font-mono font-bold text-slate-700">$711,029 USD</span>
-            </div>
-            <div class="w-full bg-slate-200 rounded-full h-2 mt-2">
-              <div class="bg-gmp-navy h-2 rounded-full" style="width: 85%"></div>
-            </div>
-            <div class="flex justify-between text-[11px] text-slate-500 mt-1.5">
-              <span>2025 YTD: $759,098 USD</span>
-              <span class="text-amber-600 font-medium">-6.3% (Optimización técnica de cargas)</span>
-            </div>
-          </div>
-
-          <!-- Geocoding -->
-          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70">
-            <div class="flex justify-between items-center text-xs">
-              <span class="font-bold text-slate-800">Geocoding API</span>
-              <span class="font-mono font-bold text-emerald-700">$635,036 USD</span>
-            </div>
-            <div class="w-full bg-slate-200 rounded-full h-2 mt-2">
-              <div class="bg-emerald-500 h-2 rounded-full" style="width: 78%"></div>
-            </div>
-            <div class="flex justify-between text-[11px] text-slate-500 mt-1.5">
-              <span>2025 YTD: $603,167 USD</span>
-              <span class="text-emerald-600 font-medium">+5.3% (Alta fidelidad operativa en clientes)</span>
-            </div>
-          </div>
-
-          <!-- Routes Compute Pro -->
-          <div class="p-3.5 rounded-2xl bg-emerald-50/60 border border-emerald-200/70">
-            <div class="flex justify-between items-center text-xs">
-              <span class="font-bold text-emerald-900">Routes: Compute Routes Pro</span>
-              <span class="font-mono font-bold text-emerald-700">$423,053 USD</span>
-            </div>
-            <div class="w-full bg-emerald-200 rounded-full h-2 mt-2">
-              <div class="bg-emerald-600 h-2 rounded-full" style="width: 90%"></div>
-            </div>
-            <div class="flex justify-between text-[11px] text-emerald-700 mt-1.5">
-              <span>2025 YTD: $285,586 USD</span>
-              <span class="font-bold text-emerald-800">▲ +48.1% (Principal motor de crecimiento logístico)</span>
-            </div>
-          </div>
-
-          <!-- Places Legacy vs Pro -->
-          <div class="p-3.5 rounded-2xl bg-indigo-50/60 border border-indigo-200/70">
-            <div class="flex justify-between items-center text-xs">
-              <span class="font-bold text-indigo-900">Places Details Pro (New API)</span>
-              <span class="font-mono font-bold text-indigo-700">$209,247 USD</span>
-            </div>
-            <div class="w-full bg-indigo-200 rounded-full h-2 mt-2">
-              <div class="bg-indigo-600 h-2 rounded-full" style="width: 65%"></div>
-            </div>
-            <div class="flex justify-between text-[11px] text-indigo-700 mt-1.5">
-              <span>Compensa caída de Places Legacy ($180k)</span>
-              <span class="font-bold text-indigo-800">▲ +25.5% (Transición de catálogo exitosa)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Módulo 6: Playbook Estratégico 2027 para la VP (100% Google Maps) -->
-    <section class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/90 card-shadow space-y-6">
-      <div class="border-b border-slate-100 pb-4">
-        <span class="text-xs font-bold uppercase tracking-wider text-gmp-navy bg-blue-50 px-2.5 py-1 rounded-md">Roadmap de Google Maps Platform</span>
-        <h3 class="text-xl font-extrabold text-slate-900 tracking-tight mt-2">6. Playbook Estratégico 2027: Líneas de Acción para la Vicepresidencia</h3>
-        <p class="text-xs text-slate-500 mt-1">Directrices concretas dentro del ecosistema Google Maps para revertir la contracción del -10.9% y blindar la cartera</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
-          <div class="w-8 h-8 rounded-xl bg-blue-100 text-gmp-navy flex items-center justify-center font-bold text-sm">
-            1
-          </div>
-          <h4 class="text-sm font-bold text-slate-900">Escudo Protector del Top 10 (Pareto 58%)</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Las 10 cuentas principales aportan <strong>$1.96M USD</strong>. La VP debe instaurar comités técnicos trimestrales (Quarterly Business Reviews - QBRs) exclusivos con los directores de tecnología y operaciones de estas cuentas para blindar la relación, revisar acuerdos de volumen y proteger la facturación ante ofertas de la competencia.
-          </p>
-        </div>
-
-        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
-          <div class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm">
-            2
-          </div>
-          <h4 class="text-sm font-bold text-slate-900">Adopción de APIs de Alto Valor (Mobility & Validation)</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Impulsar activamente la adopción de <strong>Address Validation API</strong> y soluciones de <strong>Fleet Engine / On-Demand Rides & Deliveries (ODRD)</strong> en cuentas de paquetería y comercio electrónico. Estas APIs de última generación resuelven la ineficiencia de entregas fallidas y elevan el consumo técnico sin fricción contractual.
-          </p>
-        </div>
-
-        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
-          <div class="w-8 h-8 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-sm">
-            3
-          </div>
-          <h4 class="text-sm font-bold text-slate-900">Oferta Formal de FinOps & Gobernanza Maps</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Transformar la auditoría de costos en un servicio recurrente de consultoría. Ofrecer a los clientes tableros de alertas tempranas ante picos de consumo (como ocurrió con Turbo Boy en TCC). Esto elimina sorpresas presupuestales y evita que los clientes apliquen 'apagones' abruptos de servicios de Google Maps.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
-      <div>
-        <span>Preparado por: <strong>Wilson Pinto</strong> (BDM & Solutions Architect - Servinformación)</span>
-      </div>
-      <div>
-        <span>Base de Datos: <code>servin-maps-dev.bd_places_ins.consumo_maps_wilson_2026</code></span>
-      </div>
-    </footer>
-
   </main>
 
+  <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-400 no-print mt-8">
+    Google Maps Platform Executive Board • Servinformación 2026 • Información Confidencial para Comité de Producto & Comercial
+  </footer>
+
+  <!-- Interactive JavaScript Module -->
   <script>
     const dashboardData = window.dashboardData;
 
-    // 1. Monthly Revenue Chart (ApexCharts)
+    // 1. Monthly Revenue Area Chart
     const monthlyOptions = {
       series: [
         {
-          name: 'Facturación 2025 (USD)',
-          data: dashboardData.monthly2025
+          name: '2025 Facturación (USD)',
+          data: dashboardData.monthly2025.slice(0, 11)
         },
         {
-          name: 'Facturación 2026 YTD (USD)',
+          name: '2026 Facturación YTD (USD)',
           data: dashboardData.monthly2026.slice(0, 11)
         }
       ],
       chart: {
         type: 'area',
-        height: 320,
+        height: 270,
         fontFamily: 'Plus Jakarta Sans, sans-serif',
-        toolbar: { show: false },
-        animations: { enabled: true }
+        toolbar: { show: false }
       },
-      colors: ['#94A3B8', '#0F4C81'],
+      colors: ['#CBD5E1', '#0F4C81'],
       fill: {
         type: 'gradient',
         gradient: {
           shadeIntensity: 1,
-          opacityFrom: [0.2, 0.4],
-          opacityTo: [0.05, 0.05],
+          opacityFrom: [0.15, 0.4],
+          opacityTo: [0.02, 0.05],
           stops: [0, 90, 100]
         }
       },
       dataLabels: { enabled: false },
-      stroke: {
-        curve: 'smooth',
-        width: [2, 3]
-      },
+      stroke: { curve: 'smooth', width: [2, 3] },
       xaxis: {
         categories: dashboardData.monthsLabel.slice(0, 11),
-        labels: { style: { colors: '#64748B', fontSize: '12px' } },
+        labels: { style: { colors: '#64748B', fontSize: '11px', fontWeight: 600 } },
         axisBorder: { show: false },
         axisTicks: { show: false }
       },
       yaxis: {
         labels: {
           formatter: (val) => '$' + (val / 1000).toFixed(0) + 'k',
-          style: { colors: '#64748B', fontSize: '12px' }
+          style: { colors: '#64748B', fontSize: '11px' }
         }
       },
-      grid: {
-        borderColor: '#F1F5F9',
-        strokeDashArray: 4
-      },
+      grid: { borderColor: '#F1F5F9', strokeDashArray: 3 },
       tooltip: {
         y: { formatter: (val) => '$' + Number(val).toLocaleString() + ' USD' }
       },
-      legend: { position: 'top', horizontalAlign: 'right' }
+      legend: { position: 'top', horizontalAlign: 'right', fontSize: '11px' }
     };
-    new ApexCharts(document.querySelector("#monthlyChart"), monthlyOptions).render();
+    new ApexCharts(document.querySelector("#monthlyRevenueChart"), monthlyOptions).render();
 
-    // 2. Top SKUs Horizontal Bar Chart
-    const skuCategories = dashboardData.topSkus.slice(0, 7).map(s => s.name);
-    const sku2025 = dashboardData.topSkus.slice(0, 7).map(s => s.cost25_ytd);
-    const sku2026 = dashboardData.topSkus.slice(0, 7).map(s => s.cost26);
+    // 2. NRR Dynamics Breakdown Bar Chart
+    const nrrOptions = {
+      series: [{
+        name: 'Impacto en Facturación (USD)',
+        data: [
+          { x: 'Expansión (73)', y: 734309, fillColor: '#059669' },
+          { x: 'New Logos (47)', y: 50643, fillColor: '#1A73E8' },
+          { x: 'Contracción (77)', y: -1018066, fillColor: '#D97706' },
+          { x: 'Churn (53)', y: -180002, fillColor: '#E11D48' }
+        ]
+      }],
+      chart: {
+        type: 'bar',
+        height: 270,
+        fontFamily: 'Plus Jakarta Sans, sans-serif',
+        toolbar: { show: false }
+      },
+      plotOptions: {
+        bar: {
+          columnWidth: '55%',
+          borderRadius: 6,
+          dataLabels: { position: 'top' }
+        }
+      },
+      dataLabels: {
+        enabled: true,
+        formatter: (val) => (val >= 0 ? '+' : '') + '$' + (Math.abs(val) / 1000).toFixed(0) + 'k',
+        style: { fontSize: '10px', fontWeight: 700, colors: ['#334155'] },
+        offsetY: -18
+      },
+      xaxis: {
+        labels: { style: { colors: '#475569', fontSize: '10px', fontWeight: 600 } },
+        axisBorder: { show: false },
+        axisTicks: { show: false }
+      },
+      yaxis: {
+        labels: {
+          formatter: (val) => '$' + (val / 1000).toFixed(0) + 'k',
+          style: { colors: '#64748B', fontSize: '10px' }
+        }
+      },
+      grid: { borderColor: '#F1F5F9', strokeDashArray: 3 },
+      tooltip: {
+        y: { formatter: (val) => (val >= 0 ? '+' : '') + '$' + Number(val).toLocaleString() + ' USD' }
+      }
+    };
+    new ApexCharts(document.querySelector("#nrrWaterfallChart"), nrrOptions).render();
+
+    // 3. Top SKUs Horizontal Bar Chart
+    const skuCategories = dashboardData.topSkus.slice(0, 6).map(s => s.name);
+    const sku2025 = dashboardData.topSkus.slice(0, 6).map(s => s.cost25_ytd);
+    const sku2026 = dashboardData.topSkus.slice(0, 6).map(s => s.cost26);
 
     const skuOptions = {
       series: [
@@ -707,16 +678,16 @@
       ],
       chart: {
         type: 'bar',
-        height: 320,
+        height: 290,
         fontFamily: 'Plus Jakarta Sans, sans-serif',
         toolbar: { show: false }
       },
-      colors: ['#CBD5E1', '#059669'],
+      colors: ['#CBD5E1', '#0F4C81'],
       plotOptions: {
         bar: {
           horizontal: true,
-          dataLabels: { position: 'top' },
-          barHeight: '65%'
+          barHeight: '60%',
+          borderRadius: 4
         }
       },
       dataLabels: { enabled: false },
@@ -724,24 +695,60 @@
         categories: skuCategories,
         labels: {
           formatter: (val) => '$' + (val / 1000).toFixed(0) + 'k',
-          style: { colors: '#64748B', fontSize: '11px' }
+          style: { colors: '#64748B', fontSize: '10px' }
         }
       },
       yaxis: {
         labels: {
           maxWidth: 160,
-          style: { colors: '#334155', fontSize: '11px', fontWeight: 500 }
+          style: { colors: '#334155', fontSize: '10px', fontWeight: 600 }
         }
       },
       grid: { borderColor: '#F1F5F9' },
       tooltip: {
         y: { formatter: (val) => '$' + Number(val).toLocaleString() + ' USD' }
       },
-      legend: { position: 'top', horizontalAlign: 'right' }
+      legend: { position: 'top', horizontalAlign: 'right', fontSize: '11px' }
     };
-    new ApexCharts(document.querySelector("#skuChart"), skuOptions).render();
+    new ApexCharts(document.querySelector("#skuHorizontalChart"), skuOptions).render();
 
-    // 3. Render Table
+    // 4. SKU Share Donut Chart
+    const skuDonutOptions = {
+      series: [711029, 635036, 423053, 209247, 180058, 1208460],
+      labels: ['Dynamic Maps', 'Geocoding', 'Routes Pro', 'Places Pro', 'Places Legacy', 'Otros SKUs'],
+      chart: {
+        type: 'donut',
+        height: 280,
+        fontFamily: 'Plus Jakarta Sans, sans-serif'
+      },
+      colors: ['#0F4C81', '#059669', '#1A73E8', '#7C3AED', '#F59E0B', '#94A3B8'],
+      dataLabels: { enabled: false },
+      legend: { position: 'bottom', fontSize: '10px', horizontalAlign: 'center' },
+      tooltip: {
+        y: { formatter: (val) => '$' + Number(val).toLocaleString() + ' USD (' + ((val / 3366883)*100).toFixed(1) + '%)' }
+      },
+      plotOptions: {
+        pie: {
+          donut: {
+            size: '68%',
+            labels: {
+              show: true,
+              total: {
+                show: true,
+                label: 'Total 2026 YTD',
+                fontSize: '11px',
+                fontWeight: 600,
+                color: '#64748B',
+                formatter: () => '$3.37M'
+              }
+            }
+          }
+        }
+      }
+    };
+    new ApexCharts(document.querySelector("#skuShareDonutChart"), skuDonutOptions).render();
+
+    // 5. Interactive Cohort Table
     let currentFilter = 'TOP30';
     const tbody = document.getElementById('clientTableBody');
 
@@ -750,23 +757,23 @@
       tbody.innerHTML = '';
 
       if (currentFilter === 'PIPELINE') {
-        document.getElementById('cohortDescription').innerText = 'Cuentas Ganadas en CRM (Closed Won / En Firma) en fase de activación técnica y onboarding de Google Maps.';
+        document.getElementById('cohortDescription').innerText = 'Cuentas Ganadas en CRM en fase de activación técnica y onboarding de Google Maps.';
         document.getElementById('cohortCountBadge').innerText = dashboardData.pipelineWon.length + ' cuentas';
 
         dashboardData.pipelineWon.forEach(p => {
           const tr = document.createElement('tr');
           tr.className = 'hover:bg-purple-50/50 transition-colors';
           tr.innerHTML = `
-            <td class="py-3 px-4">
+            <td class="py-2.5 px-4">
               <div class="font-bold text-slate-900">${p.name}</div>
               <div class="text-[10px] font-mono text-slate-500">${p.id}</div>
-              <div class="text-[11px] text-slate-500 mt-0.5">${p.statusInfo}</div>
+              <div class="text-[10px] text-slate-500 mt-0.5">${p.statusInfo}</div>
             </td>
-            <td class="py-3 px-4 text-right font-mono text-slate-400">$0</td>
-            <td class="py-3 px-4 text-right font-mono font-bold text-purple-700">${p.amountEst}</td>
-            <td class="py-3 px-4 text-right font-mono font-semibold text-emerald-600">Nuevo Ingreso</td>
-            <td class="py-3 px-4 text-right font-semibold text-purple-700">En Onboarding</td>
-            <td class="py-3 px-4 text-center">
+            <td class="py-2.5 px-4 text-right font-mono text-slate-400">$0</td>
+            <td class="py-2.5 px-4 text-right font-mono font-bold text-purple-700">${p.amountEst}</td>
+            <td class="py-2.5 px-4 text-right font-mono font-semibold text-emerald-600">Nuevo Ingreso</td>
+            <td class="py-2.5 px-4 text-right font-semibold text-purple-700">En Onboarding</td>
+            <td class="py-2.5 px-4 text-center">
               <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-purple-100 text-purple-800 border border-purple-200">${p.stage}</span>
             </td>
           `;
@@ -795,7 +802,7 @@
         desc = 'Clientes Retirados (Churn): Cuentas que registraron consumo en 2025 y $0 USD en 2026.';
       } else {
         sourceList = dashboardData.allClients;
-        desc = 'Mostrando la totalidad de cuentas auditadas en la base de datos.';
+        desc = 'Mostrando la totalidad de cuentas auditadas en la base de datos (488 cuentas).';
       }
 
       const filtered = sourceList.filter(c => {
@@ -806,7 +813,7 @@
       document.getElementById('cohortCountBadge').innerText = filtered.length + ' registros';
 
       if (filtered.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="6" class="py-8 text-center text-slate-400 font-medium">No se encontraron clientes para este criterio o búsqueda.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="6" class="py-6 text-center text-slate-400 font-medium">No se encontraron clientes para este criterio o búsqueda.</td></tr>';
         return;
       }
 
@@ -822,7 +829,7 @@
         } else if (c.status === 'NEW_LOGO') {
           badge = '<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-50 text-blue-700 border border-blue-200">New Logo</span>';
         } else if (c.status === 'CHURN') {
-          badge = '<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-rose-50 text-rose-700 border border-rose-200">Retirado (Churn)</span>';
+          badge = '<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-rose-50 text-rose-700 border border-rose-200">Retirado</span>';
         }
 
         const isPositive = c.diff >= 0;
@@ -830,15 +837,15 @@
         const cost25Display = c.status === 'CHURN' ? c.cost25 : c.cost25_ytd;
 
         tr.innerHTML = `
-          <td class="py-3 px-4">
+          <td class="py-2.5 px-4">
             <div class="font-bold text-slate-900">${c.name}</div>
             <div class="text-[10px] font-mono text-slate-400">${c.id}</div>
           </td>
-          <td class="py-3 px-4 text-right font-mono text-slate-600">$${cost25Display.toLocaleString()}</td>
-          <td class="py-3 px-4 text-right font-mono font-bold text-slate-900">$${c.cost26.toLocaleString()}</td>
-          <td class="py-3 px-4 text-right font-mono font-semibold ${diffColor}">${isPositive ? '+' : ''}$${c.diff.toLocaleString()}</td>
-          <td class="py-3 px-4 text-right font-semibold ${diffColor}">${c.diffPct}</td>
-          <td class="py-3 px-4 text-center">${badge}</td>
+          <td class="py-2.5 px-4 text-right font-mono text-slate-600">$${cost25Display.toLocaleString()}</td>
+          <td class="py-2.5 px-4 text-right font-mono font-bold text-slate-900">$${c.cost26.toLocaleString()}</td>
+          <td class="py-2.5 px-4 text-right font-mono font-semibold ${diffColor}">${isPositive ? '+' : ''}$${c.diff.toLocaleString()}</td>
+          <td class="py-2.5 px-4 text-right font-semibold ${diffColor}">${c.diffPct}</td>
+          <td class="py-2.5 px-4 text-center">${badge}</td>
         `;
         tbody.appendChild(tr);
       });
